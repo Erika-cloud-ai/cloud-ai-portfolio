@@ -1,4 +1,8 @@
 # AWS AI Practitioner AIF-C01 Practice exam
+| １st Time    | 2nd time    |  3rd Time   | 4th Time |
+|:---------------|:-----------|:----------|:----------|
+| 25% | 45%    | 85% |.   |
+
 
 ## 1 <br>
 A legal research firm is seeking to implement a cutting-edge AI solution that can generate detailed responses to complex legal queries by retrieving relevant information from their extensive database of legal documents. The company wants to use Amazon Bedrock to deploy a fully managed solution that supports an end-to-end Retrieval Augmented Generation (RAG) workflow, ensuring that the AI can pull contextually accurate information and generate high-quality answers efficiently.
@@ -131,14 +135,11 @@ AWSクラウドサービスにおける責任共有モデルについて、顧�
 <br>
 
 * Answer <br>
-  ***AWS is responsible for the security "of" the cloud, while the customer is responsible for security "in" the cloud*** <br>
+  ***AWS is responsible for the security "of" the cloud, while the customer is responsible for security "in" the cloud　including data, applications, and access management*** <br>
 AWSは、インフラストラクチャ、ハードウェア、ソフトウェアなど、クラウド自体のセキュリティを担当し、一方、顧客はデータ、アプリケーション、アクセス管理など、クラウド内におけるセキュリティを担当します。
 <br>
 
 * Summary <br>
-
-### 🐒 <br>
-
 AWSクラウドは **賃貸マンション** だと思ってください。
 
 * 🏢 建物・耐震・電気 → **AWSの責任**
@@ -147,8 +148,12 @@ AWSクラウドは **賃貸マンション** だと思ってください。
 つまり
 
 * AWS：**クラウドそのものの安全**
-* ユーザー：**クラウドの中の使い方**
-
+* ユーザー：**クラウドの中の使い方**<vr>
+<br>
+**不正解** <br>
+* AWS is responsible for configuring and managing the security settings of the customer's applications, while the customer is responsible for the underlying hardware infrastructure <br>AWSは顧客のアプリケーションのセキュリティ設定の構成と管理を担当し、顧客は基盤となるハードウェアインフラストラクチャを担当します。
+* AWS handles all security aspects including data encryption, user access management, and application security, while the customer only needs to manage their virtual machines <br>AWSはデータ暗号化、ユーザーアクセス管理、アプリケーションセキュリティなど、セキュリティに関するあらゆる側面を処理するため、顧客は仮想マシンの管理のみに集中できます。
+* Customers are responsible for ensuring the physical security of data centers, while AWS is responsible for monitoring network traffic and managing user identities <br>顧客はデータセンターの物理的なセキュリティを確保する責任があり、AWSはネットワークトラフィックの監視とユーザーIDの管理を担当します。
 ---
 
 **不正解**
@@ -202,8 +207,8 @@ AWSのグローバルインフラストラクチャについて正しいもの�
 <br>
 
 * Answer <br>
-  ***Each AWS Region consists of a minimum of two Availability Zones (AZ)*** <br>
-  ***Each Availability Zone (AZ) consists of one or more discrete data centers*** <br>
+  ***Each AWS Region consists of a minimum of three Availability Zones (AZ)*** <br>各AWSリージョンは、最低3つのアベイラビリティゾーン（AZ）で構成されています。 <br>
+  ***Each Availability Zone (AZ) consists of one or more discrete data centers*** <br>1つ以上の独立したデータセンターで構成される
 
 <br>
 
@@ -217,7 +222,12 @@ AWSの世界構造 🌍
 だから
 
 * Region には **複数AZ**
-* AZ には **1つ以上のデータセンター**
+* AZ には **1つ以上のデータセンター** <br>
+<br>
+**不正解** <br>
+* Each AWS Region consists of two or more Edge Locations <br>各AWSリージョンは、2つ以上のエッジロケーションで構成されています。
+* Each AWS Region consists of a minimum of two Availability Zones (AZ) <br>各AWSリージョンは、最低2つのアベイラビリティゾーン（AZ）で構成されています。
+* Each Availability Zone (AZ) consists of two or more discrete data centers <br>各アベイラビリティゾーン（AZ）は、2つ以上の独立したデータセンターで構成されています。
 
 ---
 
@@ -231,8 +241,8 @@ To make an informed decision, the company needs to identify which of the followi
 <br>
 
 * Answer <br>
-  ***Smaller models are cheaper to use than larger models*** <br>
-  ***You can use a customized model in the Provisioned Throughput or On-Demand mode*** <br>小型モデルは大型モデルよりも使用料金が安価です。
+  ***Smaller models are cheaper to use than larger models*** <br>小型モデルは大型モデルよりも使用料金が安価です。 <br>
+  ***You can use a customized model in the Provisioned Throughput or On-Demand mode*** <br>
 カスタマイズされたモデルは、プロビジョニング済みスループットモードまたはオンデマンドモードで使用できます。
 
 <br>
@@ -262,7 +272,7 @@ Amazon SageMaker Canvasを最もよく表しているのはどれですか？ <b
 <br>
 
 * Answer <br>
-  ***Gives the ability to use machine learning to generate predictions without the need to write any code*** <br>
+  ***Gives the ability to use machine learning to generate predictions without the need to write any code*** <br>機械学習を使用して予測を生成する際に、コードを一切記述する必要なく、その機能を利用できるようにします。
 
 <br>
 
@@ -341,12 +351,12 @@ AIは賢い
 A healthcare company has deployed a machine learning model using Amazon SageMaker to predict patient health outcomes based on various clinical parameters. A data analyst at the company inputs new patient data, such as age, blood pressure, and cholesterol levels, into the SageMaker model to receive a prediction on the likelihood of a cardiovascular event. The analyst needs to understand the specific term for this process, where the trained model uses its learned patterns to provide a prediction or output based on new input data.
 What is this term called? <br>ある医療関連企業は、Amazon SageMaker を使用して機械学習モデルを導入し、様々な臨床パラメータに基づいて患者の健康状態を予測しています。同社のデータアナリストは、年齢、血圧、コレステロール値などの新しい患者データを SageMaker モデルに入力し、心血管疾患の発症リスクに関する予測結果を受け取ります。アナリストは、訓練済みのモデルが学習したパターンを用いて新しい入力データに基づいて予測や出力を行う、このプロセスを表す専門用語を知りたいと考えています。
 この用語は何と呼ばれますか？
-学習済みモデルが新しいデータから予測を行うプロセスは何と呼ばれますか？ <br>
+学習済みモデルが新しいデータから予測を行うプロセスは何と呼ばれますか？ <br>このプロセスは推論と呼ばれ、モデルは学習済みのパラメータを使用して、ユーザーから提供された新しい入力データに基づいて予測または出力を生成します。
 
 <br>
 
 * Answer <br>
-  ***Inference推論*** <br>
+  ***Inference推論:This process is called inference, where the model uses its trained parameters to generate a prediction or output based on new input data provided by the user*** <br>このプロセスは推論と呼ばれ、モデルは学習済みのパラメータを使用して、ユーザーから提供された新しい入力データに基づいて予測または出力を生成します。
 
 <br>
 
@@ -403,7 +413,7 @@ What do you recommend? <br>ある金融サービス会社は、信用スコア�
 <br>
 
 * Answer <br>
-  ***Machine learning involves training algorithms on large datasets to identify patterns*** <br>機械学習とは、大量のデータセットを用いてアルゴリズムを訓練し、パターンを識別することである。
+  ***Machine learning involves training algorithms on large datasets to identify patterns and make predictions or decisions based on new data*** <br>機械学習とは、大量のデータセットを用いてアルゴリズムを訓練し、パターンを識別することである。
 
 <br>
 
@@ -431,7 +441,7 @@ How would you differentiate between overfitting and underfitting in the context 
 <br>
 
 * Answer <br>
-  ***Overfitting performs well on training data but poorly on new data, underfitting performs poorly on both*** <br>過学習は訓練データに対しては良好な性能を示すが、新しいデータに対しては性能が低い。一方、過小学習はどちらのデータに対しても性能が低い。
+  ***Overfitting occurs when a model performs well on the training data but poorly on new, unseen data, while underfitting occurs when a model performs poorly on both the training data and new, unseen data*** <br>過学習とは、モデルが訓練データに対しては良好な性能を示すものの、新しい未知のデータに対しては性能が低下する現象であり、一方、過小適合とは、モデルが訓練データと新しい未知のデータの両方に対して性能が低い現象である。
 
 <br>
 
@@ -508,13 +518,14 @@ Which of the following would you identify as correct regarding underfitting and 
 <br>
 
 * Answer <br>
-  ***Underfit models have high bias, overfit models have high variance*** <br>
+  ***Underfit models experience high bias, whereas, overfit models experience high variance*** <br>アンダーフィットモデルはバイアスが高く、オーバーフィットモデルは分散が高いという特徴がある。
 
 <br>
 
 * Summary <br>
 * 未学習 → 思い込み強い（高バイアス） <br>
 * 過学習 → ブレブレ（高分散） <br>
+アンダーフィッティングとは、機械学習モデルが訓練データに対して十分に学習できていない状態を指します。これは、モデルがデータの特徴を捉えきれず、訓練データとテストデータの両方で低い性能を示す場合に起こります。 <br>
 <br>
 **不正解**
 * Underfit models experience low bias, whereas, overfit models experience low variance <br>アンダーフィットモデルはバイアスが低い一方、オーバーフィットモデルは分散が低い。
@@ -560,13 +571,13 @@ Give this context, how would you outline the differences between structured data
 <br>
 
 * Answer <br>
-  ***Structured data is organized in rows and columns, unstructured data lacks a fixed format*** <br>
+  ***Structured data is organized in a predefined manner, often in rows and columns, making it easy to search and analyze, while unstructured data lacks a specific format and includes data like text, images, and videos*** <br>構造化データは、多くの場合、行と列といった事前に定義された形式で整理されているため、検索や分析が容易です。一方、非構造化データは特定の形式を持たず、テキスト、画像、動画などのデータが含まれます。
 
 <br>
 
 * Summary <br>
-* 構造化 → Excel <br>
-* 非構造化 → 文章・画像・動画 <br>
+* Structured data　構造化 → Excel <br>
+* unstructured data　非構造化 → 文章・画像・動画 <br>
 <br>
 **不正解**
 * Structured data is typically freeform text that lacks any specific format, whereas unstructured data is organized in a tabular format with rows and columns <br>構造化データは通常、特定の形式を持たない自由形式のテキストであるのに対し、非構造化データは行と列を持つ表形式で整理されている。
