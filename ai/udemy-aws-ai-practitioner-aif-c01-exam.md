@@ -550,7 +550,12 @@ Which of the following is correct regarding Foundation Models (FMs) in the conte
 
 * Summary <br>
 * ラベルなし大量データ <br>
-* 自己学習 <br>
+* 自己教師あり学習 (Self-supervised learning): 人間が一つ一つ「これは猫」「これは犬」とラベルを貼ったデータ（教師あり学習）ではなく、ラベルのない膨大な生のデータを使って学習します <br>
+ LLM（大規模言語モデル）との関係
+よく耳にするLLMは、FMsという大きなカテゴリーの中の一つです。
+• FMs: 画像、音声、テキストなど様々なデータを扱える広義のモデル。
+• LLM: その中でも、特にテキストの要約、生成、分類などの言語タスクに特化したFMsを指します <br>
+
 
 👉 **事前にめちゃくちゃ賢い** <br>
 <br>
