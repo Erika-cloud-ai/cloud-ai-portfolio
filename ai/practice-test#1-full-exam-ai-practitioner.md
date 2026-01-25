@@ -1,4 +1,8 @@
 ### **AWS Certified AI Practitioner - Practice Test #1**
+# AWS AI Practitioner AIF-C01 Practice exam
+| １st Time    | 2nd time    |  3rd Time   | 4th Time |
+|:---------------|:-----------|:----------|:----------|
+| 21% | 67%    | % | %   |
 
 **問題1：顧客レビューの感情分析（2つ選択）** <br>
 **English Question (Original)**
@@ -394,8 +398,8 @@ Which of the following options best summarizes the differences between model inf
 
 ---
 
-**問題22：SageMakerでのMLflowの役割**
-**English Question (Original)**
+**問題22：SageMakerでのMLflowの役割** <br>
+**English Question (Original)** <br>
 Given this context, which statement best defines the use of MLflow with Amazon SageMaker? <br>
 **日本語訳** <br>
 Amazon SageMakerでMLflowを使用する目的を最も適切に説明しているのはどれですか？ <br>
@@ -403,7 +407,7 @@ Amazon SageMakerでMLflowを使用する目的を最も適切に説明してい�
 *   Label data using human-in-the-loop
 *   Perform automatic model tuning
 *   ✅ **Manage machine learning experiments**
-*   Leverage no-code ML
+*   Leverage no-code ML <br>
 **🐒 猿でもわかる解説** <br>
 *   **MLflow**：機械学習の「実験（Experiment）」を管理するツールです。 <br>色々な設定で試した結果を記録・比較して、一番良いものを見つけるのに役立ちます。 <br>
 *   ❌ **Ground Truth**：データのラベル付け用です。 <br>
@@ -413,8 +417,8 @@ Amazon SageMakerでMLflowを使用する目的を最も適切に説明してい�
 
 ---
 
-**問題23：生成AI（Generative AI）の定義**
-**English Question (Original)**
+**問題23：生成AI（Generative AI）の定義** <br>
+**English Question (Original)** <br>
 Which of the following best describes generative AI? <br>
 **日本語訳** <br>
 生成AI（Generative AI）を最もよく説明しているのはどれですか？ <br>
@@ -422,7 +426,7 @@ Which of the following best describes generative AI? <br>
 *   ✅ **Generative AI encompasses models and algorithms capable of creating new content such as text, images, and audio based on patterns learned from existing data**
 *   Refers to AI systems limited to performing predefined tasks
 *   Focuses exclusively on improving data retrieval efficiency
-*   Analyzes existing data to generate insights without creating new content
+*   Analyzes existing data to generate insights without creating new content <br>
 **🐒 猿でもわかる解説** <br>
 *   **生成AI**：既存のデータからパターンを学び、テキストや画像、音楽などの「新しいコンテンツ」を自ら作り出すAIのことです。 <br>
 *   ❌ **分析のみ**：新しいものを作らないのは従来のAI（識別系など）です。 <br>
@@ -431,8 +435,8 @@ Which of the following best describes generative AI? <br>
 
 ---
 
-**問題24：特徴量の寄与を説明するサービス**
-**English Question (Original)**
+**問題24：特徴量の寄与を説明するサービス** <br>
+**English Question (Original)** <br>
 Which of the following services is specifically designed to provide insights into model predictions by explaining how input features contribute to the final output? <br>
 **日本語訳** <br>
 入力データのどの要素（特徴量）が最終的な予測にどう影響したかを説明（可視化）するサービスはどれですか？ <br>
@@ -440,7 +444,7 @@ Which of the following services is specifically designed to provide insights int
 *   ✅ **Amazon SageMaker Clarify**
 *   Amazon SageMaker Feature Store
 *   Amazon SageMaker Canvas
-*   Amazon SageMaker Model Monitor
+*   Amazon SageMaker Model Monitor <br>
 **🐒 猿でもわかる解説** <br>
 *   **SageMaker Clarify**：モデルが「なぜその答えを出したのか」を説明（説明可能性）してくれます。 <br>Shapley値などを使って、どのデータが重要だったか教えてくれます。 <br>
 *   ❌ **Feature Store**：データを保存・共有する場所です。 <br>
@@ -449,8 +453,8 @@ Which of the following services is specifically designed to provide insights int
 
 ---
 
-**問題25：Bedrockでのクリエイティブ設定**
-**English Question (Original)**
+**問題25：Bedrockでのクリエイティブ設定** <br>
+**English Question (Original)** <br>
 What do you recommend to get more creative responses for the same prompt on Amazon Bedrock? <br>
 **日本語訳** <br>
 Amazon Bedrockで同じプロンプトに対してより「クリエイティブ（独創的）」な回答を得るには、どの設定を推奨しますか？ <br>
@@ -458,7 +462,7 @@ Amazon Bedrockで同じプロンプトに対してより「クリエイティブ
 *   Use lower Temperature
 *   Use lower Top-P
 *   ✅ **Use higher Temperature to get more creative responses**
-*   Use higher Top-P
+*   Use higher Top-P <br>
 **🐒 猿でもわかる解説** <br>
 *   **Temperature（温度）**：これを上げるとAIが「冒険」するようになり、回答に多様性とクリエイティビティが生まれます。 <br>
 *   逆に、正確さや一貫性を求めるなら温度を下げます。 <br>
@@ -467,8 +471,8 @@ Amazon Bedrockで同じプロンプトに対してより「クリエイティブ
 
 ---
 
-**問題26：回答から機密情報を隠す方法**
-**English Question (Original)**
+**問題26：回答から機密情報を隠す方法** <br>
+**English Question (Original)** <br>
 What is the most efficient approach to ensure customized model's responses do not contain confidential information? <br>
 **日本語訳** <br>
 カスタマイズしたモデルの回答に機密情報が含まれないようにする、最も効率的な方法はどれですか？ <br>
@@ -476,7 +480,7 @@ What is the most efficient approach to ensure customized model's responses do no
 *   Swap Amazon Bedrock with Amazon SageMaker
 *   Use encryption to protect information in responses
 *   Delete the model and fine-tune again without confidential data
-*   ✅ **The company should mask the confidential information from the model responses by leveraging Amazon Bedrock Guardrails**
+*   ✅ **The company should mask the confidential information from the model responses by leveraging Amazon Bedrock Guardrails** <br>
 **🐒 猿でもわかる解説** <br>
 *   **Amazon Bedrock Guardrails**：これを使うと、回答に含まれる個人情報（PII）や機密情報をリアルタイムで「マスク（隠蔽）」できます。 <br>モデルを作り直す必要がないので非常に効率的です。 <br>
 **🧠 暗記方法** <br>
@@ -484,16 +488,16 @@ What is the most efficient approach to ensure customized model's responses do no
 
 ---
 
-**問題27：RAGに最適な検索用データベース**
-**English Question (Original)**
+**問題27：RAGに最適な検索用データベース** <br>
+**English Question (Original)** <br>
 Which database solution would be most appropriate for fast index lookups and similarity searches in a RAG framework? <br>
 **日本語訳** <br>
 RAG（検索拡張生成）フレームワークにおいて、高速な索引検索や「類似性検索」を行うのに最も適切なデータベースはどれですか？ <br>
 **選択肢** <br>
-*   Amazon DocumentDB
-*   ✅ **Amazon OpenSearch Service**
-*   Amazon DynamoDB
-*   Amazon Aurora
+*   The company should use Amazon DocumentDB (with MongoDB compatibility), a managed NoSQL document database service designed for storing semi-structured data to facilitate search capabilities
+*   ✅ **The company should use Amazon OpenSearch Service, which is designed to provide fast search capabilities and supports full-text search, indexing, and similarity scoring** <br>同社は、高速な検索機能を提供するように設計されており、全文検索、インデックス作成、類似度スコアリングをサポートするAmazon OpenSearch Serviceを使用すべきです。
+*   The company should use Amazon DynamoDB, a fully managed NoSQL database service that offers low-latency data retrieval to handle fast index lookups as well as search operations
+*   The company should use Amazon Aurora, a managed relational database service that is optimized for high-performance transactional workloads that can be useful for search operations <br>
 **🐒 猿でもわかる解説** <br>
 *   **Amazon OpenSearch Service**：ベクトル検索や全文検索が得意で、RAGで「質問に近いデータ」を探し出すのに最適です。 <br>
 *   ❌ **DynamoDB/Aurora**：一般的なデータ保存には強いですが、AI用の類似検索（ベクトル検索）専用ではありません。 <br>
@@ -502,16 +506,16 @@ RAG（検索拡張生成）フレームワークにおいて、高速な索引�
 
 ---
 
-**問題28：知識を別のタスクに使い回す手法**
-**English Question (Original)**
-Which approach is a method where a model pre-trained on one task is adapted to improve performance on a related task? <br>
+**問題28：事前に訓練されたモデルを別で使い回す手法** <br>
+**English Question (Original)** <br>
+the company wants these models to learn from each other by sharing the latest data insights and patterns discovered by each model.Given this objective, which approach would be the most suitable for achieving cross-model optimization? <br>
 **日本語訳** <br>
 あるタスクで学習済みのモデルを、関連する別のタスクの性能向上のために再利用する手法は何ですか？ <br>
 **選択肢** <br>
-*   Reinforcement learning
-*   Self-supervised learning
-*   ✅ **Transfer learning**
-*   Incremental training
+*   The company should use reinforcement learning, a strategy where an agent learns to make decisions by interacting with an environment and receiving rewards or penalties based on its actions
+*   The company should use self-supervised learning, a technique where the model learns patterns and representations from unlabeled data without relying on explicit supervision or labeled datasets
+*   ✅ **The company should use transfer learning, a method where a model pre-trained on one task is adapted to improve performance on a different but related task by leveraging knowledge from the original task** <br>同社は転移学習を用いるべきだ。これは、あるタスクで事前に訓練されたモデルを、元のタスクから得られた知識を活用することで、別の関連するタスクにおけるパフォーマンスを向上させる手法である。
+*   The company should use incremental training, an approach that allows models to be updated incrementally with new data without needing a complete retraining from scratch <br>
 **🐒 猿でもわかる解説** <br>
 *   **転移学習（Transfer learning）**：すでに基礎知識があるモデルを「転校」させて、新しい環境で少しだけ勉強し直させる手法です。 <br>ゼロから学習するよりずっと効率的です。 <br>
 **🧠 暗記方法** <br>
@@ -519,8 +523,8 @@ Which approach is a method where a model pre-trained on one task is adapted to i
 
 ---
 
-**問題29：Amazon Q Developerのエンジン**
-**English Question (Original)**
+**問題29：Amazon Q Developerのエンジン** <br>
+**English Question (Original)** <br>
 Which of the following AWS services powers Amazon Q Developer? <br>
 **日本語訳** <br>
 Amazon Q Developerのコア機能を支えているAWSサービスはどれですか？ <br>
@@ -528,7 +532,7 @@ Amazon Q Developerのコア機能を支えているAWSサービスはどれで�
 *   Amazon Kendra
 *   ✅ **Amazon Bedrock**
 *   Amazon Q Apps
-*   Amazon SageMaker Jumpstart
+*   Amazon SageMaker Jumpstart <br>
 **🐒 猿でもわかる解説** <br>
 *   **Amazon Q Developer**：開発を助けてくれるAIですが、その中身（脳みそ）は **Amazon Bedrock** の基盤モデルによって動かされています。 <br>
 **🧠 暗記方法** <br>
@@ -536,8 +540,8 @@ Amazon Q Developerのコア機能を支えているAWSサービスはどれで�
 
 ---
 
-**問題30：フューショット（few-shots）のプロンプト構成**
-**English Question (Original)**
+**問題30：フューショット（few-shots）のプロンプト構成** <br>
+**English Question (Original)** <br>
 What type of data should be included in the few-shots examples to help the model recognize the correct user intent? <br>
 **日本語訳** <br>
 ユーザーの意図をAIに正しく理解させるための「フューショット（few-shots）」プロンプトには、どのようなデータを含めるべきですか？ <br>
@@ -545,7 +549,7 @@ What type of data should be included in the few-shots examples to help the model
 *   Model-response along with correct user intent
 *   User-input along with model-response
 *   User-input along with correct model-response
-*   ✅ **The data should include user-input along with the correct user intent**
+*   ✅ **The data should include user-input along with the correct user intent, providing examples of user queries and the corresponding intent** <br>データには、ユーザー入力と正しいユーザー意図が含まれている必要があり、ユーザーの質問例とそれに対応する意図を示す必要があります。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **フューショット**：AIに「例題」をいくつか見せる手法です。 <br>「ユーザーの入力例」と「その時の正解（意図）」をセットで教えることで、AIが学習します。 <br>
 **🧠 暗記方法** <br>
@@ -553,8 +557,8 @@ What type of data should be included in the few-shots examples to help the model
 
 ---
 
-**問題31：Amazon Q Businessの技術（2つ選択）**
-**English Question (Original)**
+**問題31：Amazon Q Businessの技術（2つ選択）** <br>
+**English Question (Original)** <br>
 Which of the following generative AI techniques are used in the Amazon Q Business web application workflow? <br> (Select two)
 **日本語訳** <br>
 Amazon Q Businessのワークフローで使用されている生成AI技術はどれですか？ <br>（2つ選択）
@@ -563,7 +567,7 @@ Amazon Q Businessのワークフローで使用されている生成AI技術は�
 *   Generative adversarial network (GAN)
 *   Diffusion Model
 *   ✅ **Large Language Model (LLM)**
-*   Variational autoencoders (VAE)
+*   Variational autoencoders (VAE) <br>
 **🐒 猿でもわかる解説** <br>
 *   **LLM**：言葉を生成する脳みそです。 <br>
 *   **RAG**：社内の最新ドキュメントを探してきて、それを元に答える仕組みです。 <br>
@@ -572,16 +576,16 @@ Amazon Q Businessのワークフローで使用されている生成AI技術は�
 
 ---
 
-**問題32：Bedrockのカスタマイズ（ラベルの有無）**
-**English Question (Original)**
+**問題32：Bedrockのカスタマイズ（ラベルの有無）** <br>
+**English Question (Original)** <br>
 Which of the following statements is correct regarding the model customization methods for Amazon Bedrock? <br>
 **日本語訳** <br>
 Amazon Bedrockのモデルカスタマイズ手法について、正しい説明はどれですか？ <br>
 **選択肢** <br>
-*   Continued pre-training uses labeled data... fine-tuning also uses labeled data
-*   Continued pre-training uses unlabeled data... fine-tuning also uses unlabeled data
-*   ✅ **Continued pre-training uses unlabeled data to pre-train a model, whereas, fine-tuning uses labeled data to train a model**
-*   Continued pre-training uses labeled data... fine-tuning uses unlabeled data
+*   Continued pre-training uses labeled data to pre-train a model and fine-tuning also uses labeled data to train a model
+*   Continued pre-training uses unlabeled data to pre-train a model and fine-tuning also uses unlabeled data to train a model
+*   ✅ **Continued pre-training uses unlabeled data to pre-train a model, whereas, fine-tuning uses labeled data to train a model** <br>継続的な事前学習では、ラベル付けされていないデータを使用してモデルを事前学習させるのに対し、ファインチューニングでは、ラベル付けされたデータを使用してモデルを学習させる。
+*   Continued pre-training uses labeled data to pre-train a model, whereas, fine-tuning uses unlabeled data to train a model <br>
 **🐒 猿でもわかる解説** <br>
 *   **継続的な事前学習**：ラベルのない大量のデータ（専門書など）を読ませて知識を深めます。 <br>
 *   **微調整（Fine-tuning）**：正解ラベルが付いたデータで、「この質問にはこう答えて」と特定のタスクを教え込みます。 <br>
@@ -590,16 +594,16 @@ Amazon Bedrockのモデルカスタマイズ手法について、正しい説明
 
 ---
 
-**問題33：FMとLLMの違い**
-**English Question (Original)**
+**問題33：FMとLLMの違い** <br>
+**English Question (Original)** <br>
 What is a key difference between Foundation Models (FMs) and Large Language Models (LLMs)? <br>
 **日本語訳** <br>
 基盤モデル（FM）と大規模言語モデル（LLM）の主な違いは何ですか？ <br>
 **選択肢** <br>
-*   ✅ **Foundation Models serve as a broad base for various AI applications, whereas LLMs are specialized for human language**
+*   ✅ **Foundation Models serve as a broad base for various AI applications by providing generalized capabilities, whereas Large Language Models are specialized for understanding and generating human language** <br>基礎モデルは、一般化された機能を提供することで、さまざまなAIアプリケーションの幅広い基盤として機能しますが、大規模言語モデルは
 *   LLMs are pre-trained... FMs are built from scratch
 *   FMs are for text only... LLMs for images
-*   FMs are academic... LLMs are commercial
+*   FMs are academic... LLMs are commercial <br>
 **🐒 猿でもわかる解説** <br>
 *   **基盤モデル（FM）**：テキスト、画像、音声など色々こなせる「万能な土台」です。 <br>
 *   **大規模言語モデル（LLM）**：その中でも特に「人間の言葉」の理解と生成に特化したモデルです。 <br>
@@ -608,8 +612,8 @@ What is a key difference between Foundation Models (FMs) and Large Language Mode
 
 ---
 
-**問題34：バラバラなデータを一括検索するサービス**
-**English Question (Original)**
+**問題34：バラバラなデータを一括検索するサービス** <br>
+**English Question (Original)** <br>
 Which Machine Learning powered AWS service offers a unified search solution connecting multiple data repositories and FAQs? <br>
 **日本語訳** <br>
 複数のリポジトリやFAQに接続し、従業員が答えを効率的に見つけられる「統一検索ソリューション」はどれですか？ <br>
@@ -617,7 +621,7 @@ Which Machine Learning powered AWS service offers a unified search solution conn
 *   Amazon SageMaker Data Wrangler
 *   Amazon Textract
 *   Amazon Comprehend
-*   ✅ **Amazon Kendra**
+*   ✅ **Amazon Kendra** <br>
 *   **🐒 猿でもわかる解説** <br>
 *   **Amazon Kendra**：企業内の色々な場所（S3, SharePointなど）にあるドキュメントを、AI（自然言語）で検索できるようにする賢い検索エンジンです。 <br>
 **🧠 暗記方法** <br>
@@ -625,8 +629,8 @@ Which Machine Learning powered AWS service offers a unified search solution conn
 
 ---
 
-**問題35：探索的データ分析（EDA）のフェーズ**
-**English Question (Original)**
+**問題35：探索的データ分析（EDA）のフェーズ** <br>
+**English Question (Original)** <br>
 Which phase of the data science process involves calculating statistical measures and using visualizations to uncover patterns? <br>
 **日本語訳** <br>
 統計量を計算したりグラフで見える化したりして、データのクセを調べるフェーズはどれですか？ <br>
@@ -634,7 +638,7 @@ Which phase of the data science process involves calculating statistical measure
 *   Data Augmentation
 *   Model Evaluation
 *   ✅ **Exploratory Data Analysis (EDA)**
-*   Data Preparation
+*   Data Preparation <br>
 **🐒 猿でもわかる解説** <br>
 *   **EDA（探索的データ分析）**：料理に例えると、材料（データ）が腐っていないか、どれくらいあるかを下調べする段階です。 <br>
 *   統計量（平均、中央値など）やグラフ（ヒストグラムなど）を駆使します。 <br>
@@ -643,16 +647,16 @@ Which phase of the data science process involves calculating statistical measure
 
 ---
 
-**問題36：データの偏り（サンプリングバイアス）**
-**English Question (Original)**
+**問題36：データの偏り（サンプリングバイアス）** <br>
+**English Question (Original)** <br>
 Which type of bias is most likely responsible for the system disproportionately flagging individuals based on their ethnic group? <br>
 **日本語訳** <br>
 AIシステムが特定の民族グループを不当に多く検知してしまう場合、最も考えられるバイアスの種類は何ですか？ <br>
 **選択肢** <br>
 *   Observer bias
-*   ✅ **Sampling bias**
+*   ✅ **Sampling bias** disproportionatelyデータの偏り　不均等
 *   Measurement bias
-*   Confirmation bias
+*   Confirmation bias <br>
 **🐒 猿でもわかる解説** <br>
 *   **サンプリングバイアス**：学習データが世の中の現実を正しく反映しておらず、特定のグループのデータが多すぎたり少なすぎたりすることで起こる偏りです。 <br>
 **🧠 暗記方法** <br>
@@ -660,8 +664,8 @@ AIシステムが特定の民族グループを不当に多く検知してしま
 
 ---
 
-**問題37：透明性の高い「決定木」**
-**English Question (Original)**
+**問題37：透明性の高い「決定木」** <br>
+**English Question (Original)** <br>
 Which of the following machine learning algorithms would be the most suitable for providing clear insights into how decisions are made? <br>
 **日本語訳** <br>
 AIが「どうやってその判断を下したか」が人間に分かりやすく、透明性が高いアルゴリズムはどれですか？ <br>
@@ -669,7 +673,7 @@ AIが「どうやってその判断を下したか」が人間に分かりやす
 *   Support Vector Machines (SVMs)
 *   ✅ **Decision Trees**
 *   Neural Networks
-*   Logistic Regression
+*   Logistic Regression <br>
 **🐒 猿でもわかる解説** <br>
 *   **決定木（Decision Trees）**：YES/NOの枝分かれで判断していくため、プロセスが丸見えで非常に理解しやすい（解釈性が高い）のが特徴です。 <br>
 *   ❌ **ニューラルネットワーク**：中身が複雑すぎて「ブラックボックス」と呼ばれます。 <br>
@@ -678,16 +682,16 @@ AIが「どうやってその判断を下したか」が人間に分かりやす
 
 ---
 
-**問題38：もっともらしい嘘（ハルシネーション）**
-**English Question (Original)**
-A Large Language Model (LLM) chatbot is generating responses that appear plausible but are actually incorrect. What is this called? <br>
+**問題38：もっともらしい嘘（ハルシネーション）** <br>
+**English Question (Original)** <br>
+A Large Language Model (LLM) chatbot is generating responses that appear plausible but are actually incorrect. What is this phenomenon called? <br>
 **日本語訳** <br>
 LLMが「もっともらしいけれど、事実に反するデタラメ」を回答する現象を何と言いますか？ <br>
 **選択肢** <br>
 *   ✅ **Hallucination**
 *   Data drift
 *   Overfitting
-*   Underfitting
+*   Underfitting <br>
 **🐒 猿でもわかる解説** <br>
 *   **ハルシネーション（幻覚）**：AIが知らないことを、あたかも知っているかのように堂々と嘘をつく現象です。 <br>
 **🧠 暗記方法** <br>
@@ -695,8 +699,8 @@ LLMが「もっともらしいけれど、事実に反するデタラメ」を�
 
 ---
 
-**問題39：Amazon QとAmazon Bedrockの違い（2つ選択）**
-**English Question (Original)**
+**問題39：Amazon QとAmazon Bedrockの違い（2つ選択）** <br>
+**English Question (Original)** <br>
 Which of the following represent the correct options for the core differences between Amazon Q and Amazon Bedrock? <br> (Select two)
 **日本語訳** <br>
 Amazon QとAmazon Bedrockの主な違いについて、正しい記述はどれですか？ <br>（2つ選択）
@@ -704,8 +708,8 @@ Amazon QとAmazon Bedrockの主な違いについて、正しい記述はどれ�
 *   With Amazon Q, you can choose the FM... Bedrock does not
 *   Bedrock is a pre-packaged assistant... Q is for building
 *   Both are pre-packaged assistants
-*   ✅ **With Amazon Bedrock, you can choose the underlying Foundation Model. However, Amazon Q does not allow you to choose the underlying Foundation Model**
-*   ✅ **Amazon Q is a generative AI–powered assistant that allows you to create pre-packaged apps, whereas, Amazon Bedrock provides an environment to build and scale applications**
+*   ✅ **With Amazon Bedrock, you can choose the underlying Foundation Model. However, Amazon Q does not allow you to choose the underlying Foundation Model** <br>Amazon Bedrockでは、基盤となるファウンデーションモデルを選択できます。しかし、Amazon Qでは基盤となるファウンデーションモデルを選択することはできません。
+*   ✅ **Amazon Q is a generative AI–powered assistant that allows you to create pre-packaged apps, whereas, Amazon Bedrock provides an environment to build and scale applications** <br>Amazon Qは、生成AIを活用したアシスタントであり、事前にパッケージ化された生成AIアプリケーションを作成できます。一方、Amazon Bedrockは、基盤モデル（FM）を使用して生成AIアプリケーションを構築および拡張するための環境を提供します。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **Bedrock**：色々なモデル（Claude, Llamaなど）を選んで「自分でアプリを作るための道具箱」です。 <br>
 *   **Amazon Q**：すでにAIアシスタントとして完成されている「パッケージ品」です。 <br>
@@ -714,8 +718,8 @@ Amazon QとAmazon Bedrockの主な違いについて、正しい記述はどれ�
 
 ---
 
-**問題40：Bedrockでのフル管理型RAG**
-**English Question (Original)**
+**問題40：Bedrockでのフル管理型RAG** <br>
+**English Question (Original)** <br>
 What solution or approach would you recommend for implementing fully managed support for a RAG workflow in Amazon Bedrock? <br>
 **日本語訳** <br>
 Amazon BedrockでRAG（検索拡張生成）のワークフローを、フル管理型で実装する機能はどれですか？ <br>
@@ -723,7 +727,7 @@ Amazon BedrockでRAG（検索拡張生成）のワークフローを、フル管
 *   ✅ **Knowledge Bases for Amazon Bedrock**
 *   Guardrails for Amazon Bedrock
 *   Watermark detection for Amazon Bedrock
-*   Continued pretraining in Amazon Bedrock
+*   Continued pretraining in Amazon Bedrock <br>
 **🐒 猿でもわかる解説** <br>
 *   **Knowledge Bases（ナレッジベース）**：社内データを登録するだけで、検索から回答生成までのRAGの仕組みを丸ごと提供してくれます。 <br>
 **🧠 暗記方法** <br>
@@ -731,8 +735,8 @@ Amazon BedrockでRAG（検索拡張生成）のワークフローを、フル管
 
 ---
 
-**問題41：良いプロンプトの構成要素**
-**English Question (Original)**
+**問題41：良いプロンプトの構成要素** <br>
+**English Question (Original)** <br>
 What are the key constituents of a good prompting technique? <br>
 **日本語訳** <br>
 効果的なプロンプト（AIへの命令文）を構成する4つの主要な要素は何ですか？ <br>
@@ -740,7 +744,7 @@ What are the key constituents of a good prompting technique? <br>
 *   Hyperparameters, Context, Input data, Output Indicator
 *   ✅ **Instructions, Context, Input data, Output Indicator**
 *   Instructions, Parameters, Input data, Output Indicator
-*   Instructions, Hyperparameters, Input data, Output Indicator
+*   Instructions, Hyperparameters, Input data, Output Indicator <br>
 **🐒 猿でもわかる解説** <br>
 *   **指示（Instructions）**：やってほしいこと。 <br>
 *   **背景（Context）**：参考情報。 <br>
@@ -751,8 +755,8 @@ What are the key constituents of a good prompting technique? <br>
 
 ---
 
-**問題42：テキストの処理単位（トークン）**
-**English Question (Original)**
+**問題42：テキストの処理単位（トークン）** <br>
+**English Question (Original)** <br>
 What is the concept called to represent words, sub-words, or characters that the model processes as discrete units of text? <br>
 **日本語訳** <br>
 生成AIモデルがテキストを処理する際の最小単位（単語や文字の一部など）を何と呼びますか？ <br>
@@ -760,7 +764,7 @@ What is the concept called to represent words, sub-words, or characters that the
 *   Vectors
 *   Embeddings
 *   ✅ **Tokens**
-*   Context window
+*   Context window <br>
 **🐒 猿でもわかる解説** <br>
 *   **トークン（Tokens）**：AIが言葉をバラバラにして理解するための「かけら」です。 <br>単語だったり、文字の組み合わせだったりします。 <br>
 **🧠 暗記方法** <br>
@@ -768,8 +772,8 @@ What is the concept called to represent words, sub-words, or characters that the
 
 ---
 
-**問題43：機械翻訳の精度指標（BLEU）**
-**English Question (Original)**
+**問題43：機械翻訳の精度指標（BLEU）** <br>
+**English Question (Original)** <br>
 Which metric would be most appropriate for assessing the accuracy of the translations? <br>
 **日本語訳** <br>
 機械翻訳がどれくらい正しいかを評価するのに最も適した指標はどれですか？ <br>
@@ -777,7 +781,7 @@ Which metric would be most appropriate for assessing the accuracy of the transla
 *   ROUGE
 *   Accuracy
 *   BERT score
-*   ✅ **BLEU (Bilingual Evaluation Understudy) score**
+*   ✅ **BLEU (Bilingual Evaluation Understudy) score** <br>
 **🐒 猿でもわかる解説** <br>
 *   **BLEUスコア**：翻訳の質を測るための定番指標です。 <br>人間が書いた「正解の翻訳」とどれくらい似ているかを数値化します。 <br>
 *   ❌ **ROUGE**：主に「要約」の評価に使われます。 <br>
@@ -786,8 +790,8 @@ Which metric would be most appropriate for assessing the accuracy of the transla
 
 ---
 
-**問題44：基盤モデルをドメイン専門家にする方法（2つ選択）**
-**English Question (Original)**
+**問題44：基盤モデルをドメイン専門家にする方法（2つ選択）** <br>
+**English Question (Original)** <br>
 Which of these approaches would be the most effective for turning the Foundation Model into a domain-specific expert? <br> (Select two)
 **日本語訳** <br>
 基盤モデルを特定の専門分野（ゲノム解析など）の「専門家」にするための最も効果的な方法は？ <br>（2つ選択）
@@ -796,7 +800,7 @@ Which of these approaches would be the most effective for turning the Foundation
 *   ✅ **Domain Adaptation Fine-Tuning**
 *   ✅ **Continued Pre-Training**
 *   Reinforcement Learning
-*   Incremental Learning
+*   Incremental Learning <br>
 **🐒 猿でもわかる解説** <br>
 *   **継続的な事前学習（Continued Pre-Training）**：専門用語を大量に浴びせて知識を増やします。 <br>
 *   **ドメイン適応微調整（Domain Adaptation Fine-Tuning）**：専門分野の特定のタスクができるように調整します。 <br>
@@ -805,16 +809,16 @@ Which of these approaches would be the most effective for turning the Foundation
 
 ---
 
-**問題45：Transformerモデルの仕組み**
-**English Question (Original)**
+**問題45：Transformerモデルの仕組み** <br>
+**English Question (Original)** <br>
 Which of the following best summarizes the way Transformer models work? <br>
 **日本語訳** <br>
 Transformer（トランスフォーマー）モデルの動作原理を最もよく説明しているのはどれですか？ <br>
 **選択肢** <br>
 *   Learning a compact representation called latent space
 *   Iteratively making controlled random changes
-*   ✅ **Transformer models use a self-attention mechanism and implement contextual embeddings**
-*   Training two neural networks in a competitive manner
+*   ✅ **Transformer models use a self-attention mechanism and implement contextual embeddings** <br>トランスフォーマーモデルは自己注意機構を使用し、文脈に応じた埋め込み表現を実装している。
+*   Training two neural networks in a competitive manner <br>
 **🐒 猿でもわかる解説** <br>
 *   **Self-attention（自己注意）**：文の中のどの言葉が重要か、お互いの関係性を計算する仕組みです。 <br>これにより、言葉の「文脈（コンテキスト）」を深く理解できます。 <br>
 **🧠 暗記方法** <br>
@@ -822,8 +826,8 @@ Transformer（トランスフォーマー）モデルの動作原理を最もよ
 
 ---
 
-**問題46：特定の情報を除外するプロンプト**
-**English Question (Original)**
+**問題46：特定の情報を除外するプロンプト** <br>
+**English Question (Original)** <br>
 What type of prompting technique involves guiding a model to exclude competitive brand names or sensitive topics? <br>
 **日本語訳** <br>
 「競合他社の名前を出さないで」など、特定の情報を除外するように指示するプロンプト手法は何ですか？ <br>
@@ -831,7 +835,7 @@ What type of prompting technique involves guiding a model to exclude competitive
 *   Chain-of-thought prompting
 *   Zero-shot Prompting
 *   ✅ **Negative prompting**
-*   Few-shot Prompting
+*   Few-shot Prompting <br>
 **🐒 猿でもわかる解説** <br>
 *   **ネガティブプロンプト**：「〜しないで（NOT）」という禁止事項を伝えることで、AIの回答をコントロールします。 <br>
 **🧠 暗記方法** <br>
@@ -839,8 +843,8 @@ What type of prompting technique involves guiding a model to exclude competitive
 
 ---
 
-**問題47：教師あり学習の例（2つ選択）**
-**English Question (Original)**
+**問題47：教師あり学習の例（2つ選択）** <br>
+**English Question (Original)** <br>
 Which of the following are examples of supervised learning? <br> (Select two)
 **日本語訳** <br>
 教師あり学習（Supervised learning）の例はどれですか？ <br>（2つ選択）
@@ -849,7 +853,7 @@ Which of the following are examples of supervised learning? <br> (Select two)
 *   ✅ **Linear regression**
 *   Clustering
 *   Association rule learning
-*   ✅ **Neural network**
+*   ✅ **Neural network** <br>
 **🐒 猿でもわかる解説** <br>
 *   **線形回帰（Linear regression）**：過去のデータ（正解あり）から数値を予測します。 <br>
 *   **ニューラルネットワーク**：ラベル付きデータで学習する複雑なモデルの代表です。 <br>
@@ -859,8 +863,8 @@ Which of the following are examples of supervised learning? <br> (Select two)
 
 ---
 
-**問題48：AIの記憶の限界（コンテキストウィンドウ）**
-**English Question (Original)**
+**問題48：AIの記憶の限界（コンテキストウィンドウ）** <br>
+**English Question (Original)** <br>
 What is this concept called that defines the maximum amount of text or characters the AI model can process at one time? <br>
 **日本語訳** <br>
 AIモデルが一度に処理・考慮できるテキストの最大量を何と呼びますか？ <br>
@@ -868,7 +872,7 @@ AIモデルが一度に処理・考慮できるテキストの最大量を何と
 *   Tokens
 *   Embeddings
 *   Character count
-*   ✅ **Context window**
+*   ✅ **Context window:This concept is referred to as a context window, which determines the amount of text or information the model can consider at once while generating a response, typically measured in tokens rather than characters** <br>この概念はコンテキストウィンドウと呼ばれ、モデルが応答を生成する際に一度に考慮できるテキストまたは情報の量を決定するもので、通常は文字数ではなくトークン数で測定されます。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **コンテキストウィンドウ**：AIが「一度に読める量（短期記憶の容量）」のようなものです。 <br>これを超えた分は忘れてしまいます。 <br>
 **🧠 暗記方法** <br>
@@ -876,8 +880,8 @@ AIモデルが一度に処理・考慮できるテキストの最大量を何と
 
 ---
 
-**問題49：電話の感情分析に適したサービス**
-**English Question (Original)**
+**問題49：電話の感情分析に適したサービス** <br>
+**English Question (Original)** <br>
 Which AWS services would you recommend for performing sentiment analysis for customer service audio calls? <br>
 **日本語訳** <br>
 カスタマーサービスの電話音声から感情分析を行うのに適した組み合わせはどれですか？ <br>
@@ -885,7 +889,7 @@ Which AWS services would you recommend for performing sentiment analysis for cus
 *   Amazon Rekognition and Amazon Transcribe
 *   Amazon Translate and Amazon Comprehend
 *   ✅ **Amazon Transcribe and Amazon Comprehend**
-*   Amazon Transcribe and Amazon Translate
+*   Amazon Transcribe and Amazon Translate <br>
 **🐒 猿でもわかる解説** <br>
 *   **Amazon Transcribe**：音声をテキスト（文字）に変換します。 <br>
 *   **Amazon Comprehend**：そのテキストを分析して、ポジティブかネガティブか（感情）を判別します。 <br>
@@ -894,16 +898,16 @@ Which AWS services would you recommend for performing sentiment analysis for cus
 
 ---
 
-**問題50：微調整したモデルを使うための課金モード**
-**English Question (Original)**
+**問題50：微調整したモデルを使うための課金モード** <br>
+**English Question (Original)** <br>
 To test and deploy your fine-tuned model in Amazon Bedrock, which approach is most suitable? <br>
 **日本語訳** <br>
 Amazon Bedrockで微調整（Fine-tune）した自作モデルをテスト・公開する際に、必須となるモードは何ですか？ <br>
 **選択肢** <br>
 *   Batch inference
 *   On-Demand mode
-*   ✅ **Provisioned Throughput mode**
-*   Amazon Bedrock playground
+*   ✅ **Provisioned Throughput mode** <br>The company should use Provisioned Throughput mode, which allows the company to reserve a specific amount of capacity in advance <br>同社はプロビジョンドスループットモードを使用すべきです。このモードでは、企業は特定の容量を事前に予約することができます。
+*   Amazon Bedrock playground <br>
 **🐒 猿でもわかる解説** <br>
 *   **プロビジョンドスループット（Provisioned Throughput）**：自作したカスタムモデルを動かすには、専用の計算能力を「予約（購入）」する必要があります。 <br>標準の従量課金（On-Demand）では使えません。 <br>
 **🧠 暗記方法** <br>
@@ -911,8 +915,8 @@ Amazon Bedrockで微調整（Fine-tune）した自作モデルをテスト・公
 
 ---
 
-**問題51：候補の「数」を絞る設定（Top K）**
-**English Question (Original)**
+**問題51：候補の「数」を絞る設定（Top K）** <br>
+**English Question (Original)** <br>
 Which inference parameter regulates the number of most-likely candidates considered for the next word? <br>
 **日本語訳** <br>
 次に続く単語の候補として考慮する「数（上位何個か）」を制限するパラメータはどれですか？ <br>
@@ -920,7 +924,7 @@ Which inference parameter regulates the number of most-likely candidates conside
 *   Top P
 *   Stop sequences
 *   Temperature
-*   ✅ **Top K**
+*   ✅ **Top K** <br>
 **🐒 猿でもわかる解説** <br>
 *   **Top K**：確率が高い単語を「上位K個（例：50個）」に絞り込んでから選ぶ設定です。 <br>
 *   ❌ **Top P**：累積確率（例：上位75%まで）で絞ります。 <br>
@@ -929,8 +933,8 @@ Which inference parameter regulates the number of most-likely candidates conside
 
 ---
 
-**問題52：Amazon Forecastのユースケース**
-**English Question (Original)**
+**問題52：Amazon Forecastのユースケース** <br>
+**English Question (Original)** <br>
 Which of the following is the best-fit for the Amazon Forecast service? <br>
 **日本語訳** <br>
 Amazon Forecastサービスが最も適しているユースケースはどれですか？ <br>
@@ -938,7 +942,7 @@ Amazon Forecastサービスが最も適しているユースケースはどれ�
 *   Recommendations tailored to user behavior
 *   Design conversational solutions for FAQs
 *   Detect and categorize toxic audio
-*   ✅ **Predict product demand to accurately vary inventory and pricing at different store locations**
+*   ✅ **Predict product demand to accurately vary inventory and pricing at different store locations** <br>製品需要を予測することで、各店舗の在庫と価格を正確に調整する。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **Amazon Forecast**：時系列データ（過去の売上など）から、将来の需要を予測する専用のAIです。 <br>在庫管理の最適化などに使われます。 <br>
 **🧠 暗記方法** <br>
@@ -946,8 +950,8 @@ Amazon Forecastサービスが最も適しているユースケースはどれ�
 
 ---
 
-**問題53：SageMaker JumpStartの特徴（2つ選択）**
-**English Question (Original)**
+**問題53：SageMaker JumpStartの特徴（2つ選択）** <br>
+**English Question (Original)** <br>
 Which of the following represent the key features of Amazon SageMaker JumpStart? <br> (Select two)
 **日本語訳** <br>
 Amazon SageMaker JumpStartの主な特徴はどれですか？ <br>（2つ選択）
@@ -955,8 +959,8 @@ Amazon SageMaker JumpStartの主な特徴はどれですか？ <br>（2つ選択
 *   Build ML models using a visual interface without code
 *   Provides only public models
 *   Training data will be used to train the base model
-*   ✅ **Pre-trained models are fully customizable for your use case with your data**
-*   ✅ **You can evaluate, compare, and select Foundation Models quickly based on pre-defined metrics**
+*   ✅ **Pre-trained models are fully customizable for your use case with your data** <br>事前学習済みモデルは、お客様のデータを使用して、お客様のユースケースに合わせて完全にカスタマイズ可能です。
+*   ✅ **You can evaluate, compare, and select Foundation Models quickly based on pre-defined metrics** <br>事前定義された指標に基づいて、ファウンデーションモデルを迅速に評価、比較、選択できます。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **モデルのデパート**：たくさんの事前学習済みモデルが揃っており、自分のデータでカスタマイズ（微調整）してすぐに使えます。 <br>
 *   モデルの評価や比較も簡単に行えます。 <br>
@@ -965,8 +969,8 @@ Amazon SageMaker JumpStartの主な特徴はどれですか？ <br>（2つ選択
 
 ---
 
-**問題54：文脈理解のプロ（BERT）**
-**English Question (Original)**
+**問題54：文脈理解のプロ（BERT）** <br>
+**English Question (Original)** <br>
 Which of the following embedding models would be most suitable for differentiating the contextual meanings of words? <br>
 **日本語訳** <br>
 同じ単語でも文脈によって意味が異なる（例：川の「バンク」と銀行の「バンク」）のを正確に見分けるのに適したモデルはどれですか？ <br>
@@ -974,7 +978,7 @@ Which of the following embedding models would be most suitable for differentiati
 *   Singular Value Decomposition (SVD)
 *   Word2Vec
 *   Principal Component Analysis (PCA)
-*   ✅ **Bidirectional Encoder Representations from Transformers (BERT)**
+*   ✅ **Bidirectional Encoder Representations from Transformers (BERT)** <br>
 **🐒 猿でもわかる解説** <br>
 *   **BERT**：文章を「双方向（Bidirectional）」から読み取ります。 <br>単語の前後を同時に見るので、文脈を捉える力が非常に強いです。 <br>
 **🧠 暗記方法** <br>
@@ -982,16 +986,16 @@ Which of the following embedding models would be most suitable for differentiati
 
 ---
 
-**問題55：Shapley値（個別）とPDP（全体）の違い**
-**English Question (Original)**
+**問題55：Shapley値（個別）とPDP（全体）の違い** <br>
+**English Question (Original)** <br>
 Which explanation BEST describes the differences between Shapley values and Partial Dependence Plots (PDP)? <br>
 **日本語訳** <br>
 Shapley値と部分依存プロット（PDP）の違いを正しく説明しているのはどれですか？ <br>
 **選択肢** <br>
-*   ✅ **Shapley values provide a local explanation (specific instance), while PDP provides a global explanation across the dataset**
+*   ✅ **Shapley values provide a local explanation by quantifying the contribution of each feature to the prediction for a specific instance, while PDP provides a global explanation by showing the marginal effect of a feature on the model’s predictions across the dataset. Use Shapley values to explain individual predictions and PDP to understand the model's behavior at a dataset level** <br>シャプレー値は、特定事例の予測に対する各特徴量の貢献度を定量化することで局所的な説明を提供し、一方、部分依存プロット（PDP）は、データセット全体におけるモデルの予測に対する特徴量の限界効果を示すことで全体的な説明を提供します。個々の予測を説明するにはシャプレー値を、データセットレベルでのモデルの挙動を理解するにはPDPを使用してください。
 *   Both are global methods
 *   Shapley is visual, PDP is numeric
-*   Shapley is global, PDP is local
+*   Shapley is global, PDP is local <br>
 **🐒 猿でもわかる解説** <br>
 *   **Shapley値**：その「1件」のデータに対して、どの項目がどう効いたか（ローカルな説明）を示します。 <br>
 *   **PDP**：データセット「全体」で、ある項目が変わると予測がどう変わるか（グローバルな説明）を示します。 <br>
@@ -1000,8 +1004,8 @@ Shapley値と部分依存プロット（PDP）の違いを正しく説明して�
 
 ---
 
-**問題56：BedrockナレッジベースのデフォルトDB**
-**English Question (Original)**
+**問題56：BedrockナレッジベースのデフォルトDB** <br>
+**English Question (Original)** <br>
 Which is the default vector database supported by Knowledge Bases for Amazon Bedrock? <br>
 **日本語訳** <br>
 Amazon Bedrockのナレッジベースを作成する際、自分で用意しない場合に「デフォルト」で作成されるベクトルデータベースは何ですか？ <br>
@@ -1009,7 +1013,7 @@ Amazon Bedrockのナレッジベースを作成する際、自分で用意しな
 *   MongoDB
 *   ✅ **OpenSearch Serverless vector store**
 *   Amazon Aurora
-*   Redis Enterprise Cloud
+*   Redis Enterprise Cloud <br>
 **🐒 猿でもわかる解説** <br>
 *   ナレッジベースの設定時、既存のDBがない場合はAWSが裏側で **Amazon OpenSearch Serverless** のベクトルストアを自動的に用意してくれます。 <br>
 **🧠 暗記方法** <br>
@@ -1017,16 +1021,16 @@ Amazon Bedrockのナレッジベースを作成する際、自分で用意しな
 
 ---
 
-**問題57：PDFに基づいた回答を安価に行う方法**
-**English Question (Original)**
+**問題57：PDFに基づいた回答を安価に行う方法** <br>
+**English Question (Original)** <br>
 Which of the following approaches represents the most cost-effective solution for current responses based on product catalog PDFs? <br>
 **日本語訳** <br>
 製品カタログ（PDF）の内容に基づいた回答を、最もコスト効率よく提供する方法はどれですか？ <br>
 **選択肢** <br>
 *   Attach all PDFs to each query
 *   Fine-tune the LLM with PDF data
-*   ✅ **Utilize a Retrieval-Augmented Generation (RAG) system by indexing all product catalog PDFs**
-*   Attach a single PDF to each query
+*   ✅ **Utilize a Retrieval-Augmented Generation (RAG) system by indexing all product catalog PDFs and configuring the LLM chatbot to reference this system for answering queries** <br>すべての製品カタログPDFをインデックス化し、LLMチャットボットがこのシステムを参照して質問に回答するように設定することで、検索拡張生成（RAG）システムを活用します。
+*   Attach a single PDF to each query <br>
 **🐒 猿でもわかる解説** <br>
 *   **RAG（検索拡張生成）**：モデルを何度も学習（微調整）し直すのはお金がかかります。 <br>PDFを検索可能な状態にして、必要な時だけ「カンニング」させるRAGが最も安上がりです。 <br>
 **🧠 暗記方法** <br>
@@ -1034,8 +1038,8 @@ Which of the following approaches represents the most cost-effective solution fo
 
 ---
 
-**問題58：非同期推論（Asynchronous inference）**
-**English Question (Original)**
+**問題58：非同期推論（Asynchronous inference）** <br>
+**English Question (Original)** <br>
 Which inference method would be the most suitable for processing datasets < 1GB where immediate responses are not required? <br>
 **日本語訳** <br>
 データ量が1GB未満で、即時のレスポンス（リアルタイム性）が求められない場合に最適な推論方法はどれですか？ <br>
@@ -1043,7 +1047,7 @@ Which inference method would be the most suitable for processing datasets < 1GB 
 *   Serverless inference
 *   Real-time inference
 *   Batch inference
-*   ✅ **Asynchronous inference**
+*   ✅ **Asynchronous inference** <br>
 **🐒 猿でもわかる解説** <br>
 *   **非同期推論**：リクエストをキュー（待ち行列）に入れて、順番に処理します。 <br>1GBまでのデータに対応でき、急がない処理ならこれが効率的です。 <br>
 **🧠 暗記方法** <br>
@@ -1051,8 +1055,8 @@ Which inference method would be the most suitable for processing datasets < 1GB 
 
 ---
 
-**問題59：AWSのベストプラクティス提供ツール**
-**English Question (Original)**
+**問題59：AWSのベストプラクティス提供ツール** <br>
+**English Question (Original)** <br>
 Which AWS tool provides recommendations for governance, cost savings, performance, and security? <br>
 **日本語訳** <br>
 AWS環境のセキュリティ、コスト、パフォーマンスなどをチェックし、ベストプラクティス（改善案）を提案してくれるツールはどれですか？ <br>
@@ -1060,7 +1064,7 @@ AWS環境のセキュリティ、コスト、パフォーマンスなどをチ�
 *   AWS Audit Manager
 *   AWS Config
 *   ✅ **AWS Trusted Advisor**
-*   AWS CloudTrail
+*   AWS CloudTrail <br>
 **🐒 猿でもわかる解説** <br>
 *   **AWS Trusted Advisor**：あなたのAWS利用状況を「信頼できるアドバイザー」としてチェックし、「ここをもっと安くできますよ」「ここが危険ですよ」と教えてくれます。 <br>
 **🧠 暗記方法** <br>
@@ -1068,8 +1072,8 @@ AWS環境のセキュリティ、コスト、パフォーマンスなどをチ�
 
 ---
 
-**問題60：SageMakerモデルダッシュボード**
-**English Question (Original)**
+**問題60：SageMakerモデルダッシュボード** <br>
+**English Question (Original)** <br>
 Which Amazon SageMaker service can help track and manage deployed models effectively? <br>
 **日本語訳** <br>
 デプロイ済みの複数のモデルのパフォーマンスや利用状況を一元管理し、監視するのに役立つサービスはどれですか？ <br>
@@ -1077,7 +1081,7 @@ Which Amazon SageMaker service can help track and manage deployed models effecti
 *   Amazon SageMaker Ground Truth
 *   Amazon SageMaker JumpStart
 *   Amazon SageMaker Clarify
-*   ✅ **Amazon SageMaker Model Dashboard**
+*   ✅ **Amazon SageMaker Model Dashboard** <br>
 **🐒 猿でもわかる解説** <br>
 *   **Model Dashboard**：稼働中のモデルやエンドポイントが「ちゃんと動いているか」「リソースをどれくらい使っているか」をまとめて見れる管理画面です。 <br>
 **🧠 暗記方法** <br>
@@ -1085,16 +1089,16 @@ Which Amazon SageMaker service can help track and manage deployed models effecti
 
 ---
 
-**問題61：客の反応から学び続ける（強化学習）**
-**English Question (Original)**
+**問題61：客の反応から学び続ける（強化学習）** <br>
+**English Question (Original)** <br>
 Which approach is most suitable for enabling ongoing self-improvement of a chatbot based on customer interaction? <br>
 **日本語訳** <br>
 チャットボットが顧客との会話（フィードバック）からリアルタイムに学び、改善し続けるために最適な手法はどれですか？ <br>
 **選択肢** <br>
-*   ✅ **The company should leverage reinforcement learning (RL), where rewards are generated from positive customer feedback**
+*   ✅ **The company should leverage reinforcement learning (RL), where rewards are generated from positive customer feedback to train the chatbot in optimizing its responses** <br>同社は、強化学習（RL）を活用すべきだ。強化学習では、顧客からの肯定的なフィードバックから報酬が生成され、それに基づいてチャットボットが応答を最適化するように訓練される。
 *   The company should leverage transfer learning
 *   The company should leverage incremental training
-*   The company should leverage supervised learning
+*   The company should leverage supervised learning <br>
 **🐒 猿でもわかる解説** <br>
 *   **強化学習（RL）**：お客さんが「今の答え、良かったよ！」と反応してくれたらそれを「報酬」として受け取り、次はもっと良い答えを出せるように学習します。 <br>
 **🧠 暗記方法** <br>
@@ -1102,16 +1106,16 @@ Which approach is most suitable for enabling ongoing self-improvement of a chatb
 
 ---
 
-**問題62：不確実な量に適した「オンデマンド」**
-**English Question (Original)**
+**問題62：不確実な量に適した「オンデマンド」** <br>
+**English Question (Original)** <br>
 Which pricing model is most appropriate for a company uncertain about its usage and avoiding long-term contracts? <br>
 **日本語訳** <br>
 どれくらい使うか分からず、長期契約もしたくない場合に最適な料金プランは何ですか？ <br>
 **選択肢** <br>
-*   ✅ **On-demand pricing**
+*   ✅ **On-demand pricing:The company should opt for on-demand pricing, which allows it to pay only for the actual usage of resources without any long-term commitments** <br> 同社はオンデマンド料金体系を選択すべきだ。これにより、長期契約を結ぶことなく、実際に使用したリソース分だけを支払うことができる。
 *   Spot instances
 *   Reserved instances
-*   Provisioned throughput
+*   Provisioned throughput <br>
 **🐒 猿でもわかる解説** <br>
 *   **オンデマンド料金**：使った分だけ支払う「従量課金」です。 <br>いつでもやめられるし、最初に大きな金額を払う必要もありません。 <br>
 **🧠 暗記方法** <br>
@@ -1119,8 +1123,8 @@ Which pricing model is most appropriate for a company uncertain about its usage 
 
 ---
 
-**問題63：高品質な正解データを作る（Ground Truth）**
-**English Question (Original)**
+**問題63：高品質な正解データを作る（Ground Truth）** <br>
+**English Question (Original)** <br>
 Which Amazon SageMaker service helps build high-quality labeled training datasets? <br>
 **日本語訳** <br>
 機械学習の学習に必要な、高品質な「ラベル付き（正解付き）データ」を作成するのを助けるサービスはどれですか？ <br>
@@ -1128,7 +1132,7 @@ Which Amazon SageMaker service helps build high-quality labeled training dataset
 *   Amazon SageMaker Feature Store
 *   Amazon SageMaker JumpStart
 *   Amazon SageMaker Canvas
-*   ✅ **Amazon SageMaker Ground Truth**
+*   ✅ **Amazon SageMaker Ground Truth** <br>
 **🐒 猿でもわかる解説** <br>
 *   **SageMaker Ground Truth**：人間（クラウドワーカーや自社チーム）が画像やテキストに正解ラベルを貼る作業を効率化してくれるツールです。 <br>
 **🧠 暗記方法** <br>
@@ -1136,8 +1140,8 @@ Which Amazon SageMaker service helps build high-quality labeled training dataset
 
 ---
 
-**問題64：Amazon Rekognitionに向かない仕事**
-**English Question (Original)**
+**問題64：Amazon Rekognitionに向かない仕事** <br>
+**English Question (Original)** <br>
 Which of the following use cases is NOT the right fit for Amazon Rekognition? <br>
 **日本語訳** <br>
 Amazon Rekognitionのユースケースとして**不適切**なものはどれですか？ <br>
@@ -1145,7 +1149,7 @@ Amazon Rekognitionのユースケースとして**不適切**なものはどれ�
 *   Searchable media libraries
 *   Face-based user identity verification
 *   ✅ **Enable multilingual user experiences in your applications**
-*   Celebrity recognition
+*   Celebrity recognition <br>
 **🐒 猿でもわかる解説** <br>
 *   **Rekognition**は「画像や動画を見る目」です。 <br>
 *   ❌ **多言語対応（翻訳）**：これは文字を翻訳する **Amazon Translate** の仕事です。 <br>
@@ -1154,8 +1158,8 @@ Amazon Rekognitionのユースケースとして**不適切**なものはどれ�
 
 ---
 
-**問題65：確率の累積で絞る（Top P）**
-**English Question (Original)**
+**問題65：確率の累積で絞る（Top P）** <br>
+**English Question (Original)** <br>
 How does the inference parameter Top P influence the model response for Amazon Bedrock? <br>
 **日本語訳** <br>
 推論パラメータ「Top P」は、Amazon Bedrockの回答にどのような影響を与えますか？ <br>
@@ -1163,7 +1167,7 @@ How does the inference parameter Top P influence the model response for Amazon B
 *   Specifies stop sequences
 *   ✅ **Influences the percentage of most-likely candidates that the model considers for the next token**
 *   Influences likelihood of lower-probability outputs (Temperature)
-*   Influences the number of candidates (Top K)
+*   Influences the number of candidates (Top K) <br>
 **🐒 猿でもわかる解説** <br>
 *   **Top P**：単語を確率が高い順に並べて、「合計〇〇％（パーセンテージ）」になるまでの単語を候補にします。 <br>
 *   ❌ **Top K**：パーセントではなく「個数」で絞ります。 <br>
