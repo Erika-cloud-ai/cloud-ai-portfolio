@@ -2,7 +2,7 @@
 # AWS AI Practitioner AIF-C01 Practice exam
 | １st Time    | 2nd time    |  3rd Time   | 4th Time |
 |:---------------|:-----------|:----------|:----------|
-| 21% | 67%    | % | %   |
+| 21% | 67%    | 75% | %   |
 
 **問題1：顧客レビューの感情分析（2つ選択）** <br>
 **English Question (Original)**
