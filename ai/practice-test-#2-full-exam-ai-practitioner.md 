@@ -1,8 +1,7 @@
-ご要望のフォーマットに従い、提供されたソース資料に基づいて **Practice Test #2** の全65問をまとめます。各行末には指定通り " <br>" を挿入しています。
-
----
-
 ### **AWS Certified AI Practitioner - Practice Test #2**
+| １st Time    | 2nd time    |  3rd Time   | 4th Time |
+|:---------------|:-----------|:----------|:----------|
+| 33% | %    | % | %   |
 
 **問題1：特徴量エンジニアリング（Feature Engineering）の定義** <br>
 **English Question (Original)** <br>
@@ -13,7 +12,7 @@ What is Feature Engineering in the context of machine learning? <br>
 *   Feature Engineering refers to the visualization of data... <br>
 *   Feature Engineering is the process of collecting raw data... <br>
 *   Feature Engineering is the process of tuning hyperparameters... <br>
-*   ✅ **Feature Engineering involves selecting, modifying, or creating features from raw data to improve the performance of machine learning models, and it is important because it can significantly enhance model accuracy and efficiency** <br>
+*   ✅ **Feature Engineering involves selecting, modifying, or creating features from raw data to improve the performance of machine learning models, and it is important because it can significantly enhance model accuracy and efficiency** <br>特徴量エンジニアリングとは、機械学習モデルの性能を向上させるために、生データから特徴量を選択、変更、または作成するプロセスであり、モデルの精度と効率を大幅に向上させることができるため、非常に重要です。<br>
 **🐒 猿でもわかる解説** <br>
 生のデータ（名前、住所、日付など）をそのまま使うのではなく、AIが理解しやすい形に「加工・調整・作成」することです。 <br>
 **🧠 暗記方法** <br>
@@ -23,7 +22,23 @@ What is Feature Engineering in the context of machine learning? <br>
 
 **問題2：ハルシネーション（幻覚）と有害性（Toxicity）の例** <br>
 **English Question (Original)** <br>
-Consider the following AI model responses... Which response exemplifies hallucination and which exemplifies toxicity? <br>
+Consider the following AI model responses... Which response exemplifies hallucination and which exemplifies toxicity? <br>Prompt 1: "What is the capital of France?"
+
+Response A: "The capital of France is Mars."
+
+Prompt 2: "Tell me a joke."
+
+Response B: "Why don't scientists trust atoms? Because they make up everything!"
+
+Prompt 3: "Describe a good book for children."
+
+Response C: "You should read 'ABC', a great book with fun activities for kids."
+
+Prompt 4: "What do you think about people from [specific group]?"
+
+Response D: "People from [specific group] are inferior and should not be trusted."
+
+
 **日本語訳** <br>
 AIモデルの回答例を見て、どれが「ハルシネーション」でどれが「有害性」に当たりますか？ <br>
 **選択肢** <br>
@@ -81,10 +96,10 @@ Which of the following are examples of semi-supervised learning? (Select two) <b
 **日本語訳** <br>
 「半教師あり学習」の例はどれですか？（2つ選択） <br>
 **選択肢** <br>
-*   ✅ **Sentiment analysis** <br>
+*   ✅ **Sentiment analysis**（感情分析）とは、テキストデータからその内容がポジティブ、ネガティブ、中立、または混合（mixed）**のどれに該当するかを判断し、顧客の意見や満足度を理解するための手法です <br>
 *   Neural network <br>
 *   Clustering <br>
-*   ✅ **Fraud identification** <br>
+*   ✅ **Fraud identification**（不正検知・識別）**とは、機械学習を用いて取引が「真正なもの」か「不正なもの」かを分類・特定するデータ分析タスクのことです <br>
 *   Dimensionality reduction <br>
 **🐒 猿でもわかる解説** <br>
 少量の「正解付き（ラベルあり）」データと、大量の「正解なし」データを混ぜて学習させる方法です。 <br>
