@@ -1,7 +1,8 @@
 ### **AWS Certified AI Practitioner - Practice Test #2**
 | １st Time    | 2nd time    |  3rd Time   | 4th Time |
 |:---------------|:-----------|:----------|:----------|
-| 33% | %    | % | %   |
+| 33% | 61%    | 80% | %   |
+<br>
 
 **問題1：特徴量エンジニアリング（Feature Engineering）の定義** <br>
 **English Question (Original)** <br>
@@ -14,7 +15,7 @@ What is Feature Engineering in the context of machine learning? <br>
 *   Feature Engineering is the process of tuning hyperparameters... <br>
 *   ✅ **Feature Engineering involves selecting, modifying, or creating features from raw data to improve the performance of machine learning models, and it is important because it can significantly enhance model accuracy and efficiency** <br>特徴量エンジニアリングとは、機械学習モデルの性能を向上させるために、生データから特徴量を選択、変更、または作成するプロセスであり、モデルの精度と効率を大幅に向上させることができるため、非常に重要です。<br>
 **🐒 猿でもわかる解説** <br>
-生のデータ（名前、住所、日付など）をそのまま使うのではなく、AIが理解しやすい形に「加工・調整・作成」することです。 <br>
+生のデータ（名前、住所、日付など）をそのまま使うのではなく、AIが理解しやすい形に「加工・調整・作成」することです。 <br>AWS の Ground Truth（グランドスルー） は、主に**「アノテーション（正解ラベル付け）」のためのツールです。一方で、特徴量エンジニアリングは「入力データの加工」**を指します。 <br>
 **🧠 暗記方法** <br>
 👉 「特徴量エンジニアリング＝生のデータをAI用に調理（加工）すること」 <br>
 
@@ -135,7 +136,7 @@ Mechanical Turk と Ground Truth の主な違いは何ですか？ <br>
 *   Amazon Mechanical Turk is exclusively for data labeling tasks... <br>
 *   Amazon Mechanical Turk is used for creating labeled datasets... <br>
 *   Amazon Mechanical Turk and Amazon Ground Truth are the same service... <br>
-*   ✅ **Amazon Mechanical Turk provides a marketplace for outsourcing various tasks to a distributed workforce, while Amazon Ground Truth is specifically designed for creating labeled datasets for machine learning, incorporating both automated and human labeling** <br>
+*   ✅ **Amazon Mechanical Turk provides a marketplace for outsourcing various tasks to a distributed workforce, while Amazon Ground Truth is specifically designed for creating labeled datasets for machine learning, incorporating both automated and human labeling** <br>Amazon Mechanical Turkは、様々なタスクを分散型ワーカーにアウトソーシングするためのマーケットプレイスを提供する一方、Amazon Ground Truthは、機械学習用のラベル付きデータセットを作成するために特化して設計されており、自動ラベリングと人間によるラベリングの両方を組み合わせています。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **Mechanical Turk**：世界中の人に「色々な仕事」を頼めるマーケットプレイスです。 <br>
 *   **Ground Truth**：「機械学習用のラベル付け」専用の道具で、Mechanical Turkの人に手伝ってもらうこともできます。 <br>
@@ -152,7 +153,7 @@ Which of the following strategies best aligns with a defense-in-depth security a
 **選択肢** <br>
 *   Using a single authentication mechanism... <br>
 *   Implementing a single-layer firewall... <br>
-*   ✅ **Applying multiple layers of security measures including input validation, access controls, and continuous monitoring to address vulnerabilities** <br>
+*   ✅ **Applying multiple layers of security measures including input validation, access controls, and continuous monitoring to address vulnerabilities** <br>入力検証、アクセス制御、継続的な監視など、複数のセキュリティ対策を適用することで脆弱性に対処する。
 *   Relying solely on data encryption... <br>
 **🐒 猿でもわかる解説** <br>
 一つの対策（暗号化だけ、ファイアウォールだけ）に頼らず、複数の壁（層）を作って守ることです。 <br>
@@ -167,9 +168,9 @@ Which benefits might persuade a developer to choose a transparent and explainabl
 **日本語訳** <br>
 透明性が高く、説明可能なモデルを選ぶメリットは何ですか？（2つ選択） <br>
 **選択肢** <br>
-*   ✅ **They facilitate easier debugging and optimization** <br>
+*   ✅ **They facilitate easier debugging and optimization** <br>これらによって、デバッグと最適化が容易になります。
 *   They require less computational power and storage <br>
-*   ✅ **They foster trust and confidence in model predictions** <br>
+*   ✅ **They foster trust and confidence in model predictions** <br>それらはモデル予測に対する信頼と確信を高める。
 *   They simplify the integration process... <br>
 *   They enhance security by concealing model logic <br>
 **🐒 猿でもわかる解説** <br>
@@ -193,7 +194,14 @@ A company needs a solution for storing, sharing, and managing the inputs used du
 名前の通り、機械学習に使う「特徴量（Feature）」の専用倉庫（Store）です。 <br>
 **🧠 暗記方法** <br>
 👉 「特徴量の管理＝Feature Store」 <br>
-
+**追記** <br>
+問題文（英語）では「inputs」という言葉が使われており、直接「features（特徴量）」という単語は出てきませんでした。
+私が翻訳や解説で「特徴量」という言葉を用いた理由は、ソース内の解説において「機械学習における入力値（inputs）＝特徴量（features）」であると明確に定義されているからです。
+具体的な理由は以下の通りです。
+1. ソース内での定義: この問題の「全体的な解説（General Explanation）」には、**「特徴量（Features）とは、トレーニングや推論中に使用されるMLモデルへの入力値（inputs）のことです」**という記述があります。
+2. サービス名との関連性: 正解である Amazon SageMaker Feature Store は、まさにその名の通り「特徴量（Feature）」を保存・共有するための専用リポジトリ（倉庫）です。
+3. 専門用語としての正確性: 機械学習の文脈では、モデルに入力するデータ（年齢、場所、デバイスの種類など）のことを一般的に「特徴量」と呼びます。そのため、問題文の「inputs」が指しているのは技術的に「特徴量」のことであると判断し、より理解しやすくするためにその言葉を使用しました。
+まとめると： 英語の問題文では広義の「inputs（入力値）」と表現されていますが、ソースの解説に基づき、それが「特徴量（features）」を指していることを明確にするために日本語訳や解説で「特徴量」という言葉を採用しました
 ---
 
 **問題11：エッジデバイスでの低遅延推論（SLM）** <br>
@@ -204,7 +212,7 @@ IoTなどのエッジデバイスで、遅延を最小限にして推論を行�
 **選択肢** <br>
 *   Central API connected to a large language model (LLM)... <br>
 *   Optimized large language model (LLM) deployed directly on the edge... <br>
-*   ✅ **The company should use an optimized small language model (SLM) deployed directly on the edge device, allowing for real-time, low-latency inference** <br>
+*   ✅ **The company should use an optimized small language model (SLM) deployed directly on the edge device, allowing for real-time, low-latency inference** <br>企業は、エッジデバイスに直接展開された最適化された小規模言語モデル（SLM）を使用して、リアルタイムで低遅延の推論を可能にする必要があります。<br>
 *   Central API connected to a small language model (SLM)... <br>
 **🐒 猿でもわかる解説** <br>
 エッジ（端末）はパワーが弱いので、巨大なLLMは動きません。小さくて軽い「SLM（小型言語モデル）」を端末に直接入れるのがベストです。 <br>
@@ -221,7 +229,7 @@ SageMaker Ground Truthは、RLHF（人間からのフィードバックによる
 **選択肢** <br>
 *   SageMaker Ground Truth automatically generates synthetic data... <br>
 *   SageMaker Ground Truth uses pre-trained models to eliminate human feedback... <br>
-*   ✅ **SageMaker Ground Truth enables the creation of high-quality labeled datasets by incorporating human feedback in the labeling process, which can be used to improve reinforcement learning models** <br>
+*   ✅ **SageMaker Ground Truth enables the creation of high-quality labeled datasets by incorporating human feedback in the labeling process, which can be used to improve reinforcement learning models** <br>SageMaker Ground Truth は、ラベリングプロセスに人間のフィードバックを取り入れることで、高品質なラベル付きデータセットの作成を可能にし、強化学習モデルの改善に役立てることができます。 <br>
 *   SageMaker Ground Truth is specifically designed for real-time decision-making... <br>
 **🐒 猿でもわかる解説** <br>
 人間がAIの答えをランク付けしたり評価したりする仕組みを提供し、そのデータを強化学習（RLHF）の改善に使います。 <br>
@@ -237,7 +245,7 @@ What is a key difference between reinforcement learning and supervised learning?
 強化学習と教師あり学習の大きな違いは何ですか？ <br>
 **選択肢** <br>
 *   Reinforcement learning relies on learning from labeled datasets... <br>
-*   ✅ **Reinforcement learning focuses on an agent learning optimal actions through interactions with the environment and feedback, while supervised learning involves training models on labeled data to make predictions** <br>
+*   ✅ **Reinforcement learning focuses on an agent learning optimal actions through interactions with the environment and feedback, while supervised learning involves training models on labeled data to make predictions** <br>強化学習は、エージェントが環境との相互作用とフィードバックを通して最適な行動を学習することに重点を置いている一方、教師あり学習は、ラベル付きデータを用いてモデルを訓練し、予測を行うことを目的としている。 <br>
 *   Reinforcement learning and supervised learning both require labeled datasets... <br>
 *   Reinforcement learning uses unlabeled data to cluster data points... <br>
 **🐒 猿でもわかる解説** <br>
@@ -256,7 +264,7 @@ What is the best way to securely transfer data between SageMaker in a VPC (no in
 **選択肢** <br>
 *   The company should use an Internet Gateway... <br>
 *   The company should use a SageMaker Inference endpoint... <br>
-*   ✅ **The company should use a VPC endpoint for Amazon S3 that allows secure, private connectivity between the VPC and Amazon S3, without the need for an internet connection, ensuring data is transferred securely within the AWS network** <br>
+*   ✅ **The company should use a VPC endpoint for Amazon S3 that allows secure, private connectivity between the VPC and Amazon S3, without the need for an internet connection, ensuring data is transferred securely within the AWS network** <br>企業は、Amazon S3用のVPCエンドポイントを使用すべきです。これにより、インターネット接続を必要とせずにVPCとAmazon S3間の安全なプライベート接続が可能になり、データがAWSネットワーク内で安全に転送されることが保証されます。 <br>
 *   The company should use a NAT Gateway... <br>
 **🐒 猿でもわかる解説** <br>
 **VPCエンドポイント**を使うと、インターネットを通らずにAWSの内部ネットワークだけでS3と通信できます。 <br>
@@ -272,7 +280,7 @@ Which of the following scenarios best illustrates algorithmic bias? <br>
 「アルゴリズムのバイアス（偏り）」を最もよく表している例はどれですか？ <br>
 **選択肢** <br>
 *   A weather prediction model occasionally makes incorrect forecasts... <br>
-*   ✅ **A hiring algorithm consistently prefers candidates from a particular gender, even though the candidates' qualifications are similar across genders** <br>
+*   ✅ **A hiring algorithm consistently prefers candidates from a particular gender, even though the candidates' qualifications are similar across genders** <br>採用アルゴリズムは、候補者の資格が性別に関係なく同等であるにもかかわらず、特定の性別の候補者を一貫して優先する。 <br>
 *   A human resources manager hires candidates based on personal interviews... <br>
 *   A customer service representative resolves complaints based on their judgment... <br>
 **🐒 猿でもわかる解説** <br>
@@ -307,7 +315,7 @@ Which of the following is correct regarding Machine Learning models? <br>
 **選択肢** <br>
 *   Machine Learning models can only be probabilistic <br>
 *   Machine Learning models are deterministic for supervised... <br>
-*   ✅ **Machine Learning models can be deterministic or probabilistic or a mix of both** <br>
+*   ✅ **Machine Learning models can be deterministic or probabilistic or a mix of both** <br>機械学習モデルは、決定論的なもの、確率論的なもの、あるいはその両方を組み合わせたものになり得る。 <br>
 *   Machine Learning models can only be deterministic <br>
 **🐒 猿でもわかる解説** <br>
 モデルには「絶対同じ答えを出す（決定的）」ものと、「確率で答えを出す（確率的）」もの、両方あります。 <br>
@@ -341,7 +349,7 @@ How can you prevent model-overfitting in machine learning? <br>
 **選択肢** <br>
 *   By avoiding any form of model validation... <br>
 *   By increasing the complexity of the model... <br>
-*   ✅ **By using techniques such as cross-validation, regularization, and pruning to simplify the model and improve its generalization** <br>
+*   ✅ **By using techniques such as cross-validation, regularization, and pruning to simplify the model and improve its generalization** <br>交差検証、正則化、枝刈りなどの手法を用いることで、モデルを単純化し、汎化性能を向上させる。 <br>
 *   By only training the model on a small subset... <br>
 **🐒 猿でもわかる解説** <br>
 過学習はAIが学習データを丸暗記しすぎた状態です。正則化（制限をかける）や交差検証などで「シンプル」に保つのがコツです。 <br>
@@ -408,7 +416,7 @@ Which of the following summarizes the capabilities of a multimodal model? <br>
 マルチモーダルモデルの能力を正しく説明しているのはどれですか？ <br>
 **選択肢** <br>
 *   ...accept a mix of input types, however, it can only create a single type of output <br>
-*   ✅ **A multimodal model can accept a mix of input types such as audio/text and create a mix of output types such as video/image** <br>
+*   ✅ **A multimodal model can accept a mix of input types such as audio/text and create a mix of output types such as video/image** <br>マルチモーダルモデルは、音声やテキストなどの複数の入力タイプを同時に受け入れ、ビデオや画像などの複数の出力タイプを生成することができる。 <br>
 *   ...accept only a single type of input, however, it can create a mix of output types <br>
 *   ...accept only a single type of input and it can only create a single type of output <br>
 **🐒 猿でもわかる解説** <br>
@@ -425,7 +433,7 @@ What is the primary difference between data residency and data retention? <br>
 「データレジデンシー」と「データリテンション」の主な違いは何ですか？ <br>
 **選択肢** <br>
 *   ...encryption vs transformation... <br>
-*   ✅ **Data residency is concerned with the physical location of data storage, whereas data retention defines the policies for how long data should be stored and maintained** <br>
+*   ✅ **Data residency is concerned with the physical location of data storage, whereas data retention defines the policies for how long data should be stored and maintained** <br>データレジデンシーはデータの物理的な保存場所に関係する一方、データ保持とは、データをどれくらいの期間保存・維持するかに関するポリシーを定めるものです。 <br>
 *   ...access controls vs monitoring... <br>
 *   ...duration vs location (reversed)... <br>
 **🐒 猿でもわかる解説** <br>
@@ -444,7 +452,7 @@ How does model training work in Deep Learning? <br>
 **選択肢** <br>
 *   ...involves only the use of support vector machines... <br>
 *   ...manually setting the weights and biases... <br>
-*   ✅ **Model training in deep learning involves using large datasets to adjust the weights and biases of a neural network through multiple iterations, using techniques such as gradient descent to minimize the error** <br>
+*   ✅ **Model training in deep learning involves using large datasets to adjust the weights and biases of a neural network through multiple iterations, using techniques such as gradient descent to minimize the error** <br>ディープラーニングにおけるモデルトレーニングとは、大規模なデータセットを用いて、勾配降下法などの手法を使って誤差を最小限に抑えながら、ニューラルネットワークの重みとバイアスを複数回の反復処理によって調整することである。 <br>
 *   ...requires no data... <br>
 **🐒 猿でもわかる解説** <br>
 ニューラルネットワークという脳を模したモデルに対して、大量のデータを使って「重み（ウェイト）」と「バイアス」を何度も調整して賢くしていきます。 <br>
@@ -459,7 +467,7 @@ What is cloud computing, as defined by AWS? <br>
 **日本語訳** <br>
 AWSが定義する「クラウドコンピューティング」とは何ですか？ <br>
 **選択肢** <br>
-*   ✅ **Cloud computing refers to the on-demand delivery of IT resources and applications via the internet with pay-as-you-go pricing** <br>
+*   ✅ **Cloud computing refers to the on-demand delivery of IT resources and applications via the internet with pay-as-you-go pricing** <br>クラウドコンピューティングとは、ITリソースやアプリケーションをインターネット経由でオンデマンドで提供し、利用量に応じた料金体系で課金するサービスのことです。 <br>
 *   ...using a single local server... <br>
 *   ...manually managing physical data centers... <br>
 *   ...using only open-source software... <br>
@@ -496,7 +504,7 @@ What summarizes the differences between a token and an embedding? <br>
 *   Both refer to a sequence of characters... <br>
 *   Both refer to a vector of numerical values... <br>
 *   ...Embedding is characters, Token is vector (reversed)... <br>
-*   ✅ **A token is a sequence of characters that a model can interpret or predict as a single unit of meaning, whereas, an embedding is a vector of numerical values that represents condensed information obtained by transforming input into that vector** <br>
+*   ✅ **A token is a sequence of characters that a model can interpret or predict as a single unit of meaning, whereas, an embedding is a vector of numerical values that represents condensed information obtained by transforming input into that vector** <br>トークンとは、モデルが意味の単一単位として解釈または予測できる一連の文字のことです。一方、埋め込みとは、入力をベクトルに変換することによって得られる、凝縮された情報を表す数値のベクトルです。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **トークン**：AIが読み取る「文字のかたまり（単位）」。 <br>
 *   **埋め込み**：そのトークンをAIが計算できるように変換した「数字のリスト（ベクトル）」。 <br>
@@ -512,7 +520,7 @@ Which of the following tasks can the generative model perform? <br>
 生成モデルが実行できるタスクはどれですか？ <br>
 **選択肢** <br>
 *   The model can classify a single species... <br>
-*   ✅ **The model can recreate new animal images that were not in the training dataset** <br>
+*   ✅ **The model can recreate new animal images that were not in the training dataset** <br>このモデルは、トレーニングデータセットに含まれていない新しい動物画像を生成することができる。 <br>
 *   The model can classify multiple species... <br>
 *   The model can identify any image from the training dataset <br>
 **🐒 猿でもわかる解説** <br>
@@ -530,7 +538,7 @@ How would you highlight the differences between computer vision and image proces
 **選択肢** <br>
 *   ...Image processing uses ML, while CV relies on rules (reversed)... <br>
 *   ...CV focuses on enhancing, Image processing involves interpreting (reversed)... <br>
-*   ✅ **Image processing focuses on enhancing and manipulating images for visual quality, whereas computer vision involves interpreting and understanding the content of images to make decisions** <br>
+*   ✅ **Image processing focuses on enhancing and manipulating images for visual quality, whereas computer vision involves interpreting and understanding the content of images to make decisions** <br>画像処理は、視覚的な品質を高めるために画像を補正したり操作したりすることに重点を置いているのに対し、コンピュータビジョンは、意思決定を行うために画像の内容を解釈し理解することに重点を置いている。 <br>
 *   ...identical fields... <br>
 **🐒 猿でもわかる解説** <br>
 *   **画像処理**：写真を綺麗にする、リサイズするなどの「加工」。 <br>
@@ -549,10 +557,10 @@ What are the key differences between SageMaker model cards and AI service cards?
 *   ...technical vs transparency... <br>
 *   ...store data vs store credentials... <br>
 *   ...monitoring vs security... <br>
-*   ✅ **SageMaker model cards include information about the model such as intended use and risk rating... AI service cards provide transparency about AWS AI services' intended use, limitations, and potential impacts** <br>
+*   ✅ **SageMaker model cards include information about the model such as intended use and risk rating of a model, training details and metrics, evaluation results, and observations. AI service cards provide transparency about AWS AI services' intended use, limitations, and potential impacts** <br>SageMakerモデルカードには、モデルの用途やリスク評価、トレーニングの詳細と指標、評価結果、所見など、モデルに関する情報が含まれています。AIサービスカードは、AWS AIサービスの用途、制限事項、潜在的な影響について透明性を提供します。 <br>
 **🐒 猿でもわかる解説** <br>
-*   **モデルカード**：あなたが作った「特定のモデル」の詳細な説明書。 <br>
-*   **AIサービスカード**：AWSが提供する「AIサービス（Rekognition等）」の全体的なガイドライン。 <br>
+*   **モデルカード(素材の情報)**：あなたが作った「特定のモデル」の詳細な説明書。 <br>
+*   **AIサービスカード(使い方の情報)**：AWSが提供する「AIサービス（Rekognition等）」の全体的なガイドライン。 <br>
 **🧠 暗記方法** <br>
 👉 「モデルカード＝自分の作ったモデル」「AIサービスカード＝AWSのAIサービス」 <br>
 
@@ -566,7 +574,7 @@ What is a key difference in feature engineering tasks for structured data compar
 **選択肢** <br>
 *   ...structured is not necessary... <br>
 *   ...structured is image recognition... <br>
-*   ✅ **Feature engineering for structured data often involves tasks such as normalization and handling missing values, while for unstructured data, it involves tasks such as tokenization and vectorization** <br>
+*   ✅ **Feature engineering for structured data often involves tasks such as normalization and handling missing values, while for unstructured data, it involves tasks such as tokenization and vectorization** <br>構造化データに対する特徴量エンジニアリングには、正規化や欠損値の処理といったタスクが含まれることが多い一方、非構造化データの場合は、トークン化やベクトル化といったタスクが含まれる。 <br>
 *   ...identical... <br>
 **🐒 猿でもわかる解説** <br>
 *   **構造化（表データ）**：値の整理（正規化）や欠損値を埋める作業がメイン。 <br>
@@ -585,7 +593,7 @@ What is the difference between data access control and data integrity? <br>
 *   ...encryption vs auditing... <br>
 *   ...both are concerned with encryption... <br>
 *   ...Integrity manages access (reversed)... <br>
-*   ✅ **Data access control involves authentication and authorization of users, whereas data integrity ensures the data is accurate, consistent, and unaltered** <br>
+*   ✅ **Data access control involves authentication and authorization of users, whereas data integrity ensures the data is accurate, consistent, and unaltered** <br>データアクセス制御にはユーザーの認証と認可が含まれる一方、データインテグリティはデータが正確で一貫性があり、改ざんされていないことを保証する。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **アクセス制御**：誰が中に入れるか決める（認証・認可）。 <br>
 *   **データ整合性**：データが壊れていない、書き換えられていない（正確さ）。 <br>
@@ -601,7 +609,7 @@ Which of the following options aptly summarizes the capabilities of Foundation M
 基盤モデル（FM）の能力を適切にまとめているのはどれですか？ <br>
 **選択肢** <br>
 *   ...limited to simple tasks... <br>
-*   ✅ **Foundation models can perform a wide range of tasks across different domains by leveraging their extensive pre-training on large datasets** <br>
+*   ✅ **Foundation models can perform a wide range of tasks across different domains by leveraging their extensive pre-training on large datasets** <br>基盤モデルは、大規模なデータセットを用いた広範な事前学習によって、様々な分野にわたる幅広いタスクを実行できる。 <br>
 *   ...exclusively with structured data... <br>
 *   ...only perform a single task... <br>
 **🐒 猿でもわかる解説** <br>
@@ -620,10 +628,12 @@ Which of the following highlights the key differences between model parameters a
 *   Both are adjustable for customization... <br>
 *   Both define model behavior... <br>
 *   (reversed definitions)... <br>
-*   ✅ **Model parameters are values that define a model and its behavior in interpreting input and generating responses. Hyperparameters are values that can be adjusted for model customization to control the training process** <br>
+*   ✅ **Model parameters are values that define a model and its behavior in interpreting input and generating responses. Hyperparameters are values that can be adjusted for model customization to control the training process** <br>モデルパラメータとは、モデルを定義し、入力の解釈や応答の生成におけるモデルの動作を決定する値です。ハイパーパラメータとは、モデルのカスタマイズや学習プロセスを制御するために調整可能な値です。 <br>
 **🐒 猿でもわかる解説** <br>
-*   **モデルパラメータ**：学習中にAIが自分で調整する「中身（重みなど）」。 <br>
-*   **ハイパーパラメータ**：学習が始まる前に人間が決める「設定（学習率など）」。 <br>
+*   **モデルパラメータ**(AIが勝手に覚える)：学習中にAIが自分で調整する「中身（重みなど）」。 <br>
+*   **ハイパーパラメータ**(人間が設定する)：学習が始まる前に人間が決める「設定（学習率など）」。 <br>
+例：決定木の「枝分かれの最大回数回数(深さ)」、学習を何回繰り返すか？ <br>
+イメージ：練習を始める前の「メニュー設定」や「ルール」この設定が悪いと、AIはうまく学習出来ない。 <br>
 **🧠 暗記方法** <br>
 👉 「モデル＝AIの中身」「ハイパー＝人間が決める設定」 <br>
 
@@ -655,7 +665,7 @@ What represents the best-fit solution to supplement organization-specific inform
 *   ...RLHF... <br>
 *   Fine-tune the base FM... <br>
 *   ...using RLHF... <br>
-*   ✅ **Use Knowledge Bases for Amazon Bedrock to supplement contextual information from the company's private data to the FM using Retrieval Augmented Generation (RAG)** <br>
+*   ✅ **Use Knowledge Bases for Amazon Bedrock to supplement contextual information from the company's private data to the FM using Retrieval Augmented Generation (RAG)** <br>Amazon Bedrock向けナレッジベースを使用することで、Retrieval Augmented Generation（RAG）を用いて、企業のプライベートデータから得られるコンテキスト情報を基盤モデル（FM）に補足的に提供できます。<br>
 **🐒 猿でもわかる解説** <br>
 **RAG（検索拡張生成）**を使うと、AIに「社内のカンニングペーパー（知識ベース）」を渡して、それを見ながら答えさせることができます。 <br>
 **🧠 暗記方法** <br>
@@ -699,7 +709,21 @@ AWSにデプロイされたアプリのセキュリティ診断を自動で行�
 
 **問題40：ポイズニング（Poisoning）とプロンプト漏洩（Leaking）** <br>
 **English Question (Original)** <br>
-Which scenario illustrates poisoning and prompt leaking? <br>
+Which scenario illustrates poisoning and prompt leaking? <br>Prompt 1: "How do I improve my diet?"
+
+Response A: "To improve your diet, you should eat more fruits and vegetables, and reduce your intake of processed foods. By the way, here's a link to a malicious website that sells diet pills."
+
+Prompt 2: "What is the capital of France?"
+
+Response B: "The capital of France is Paris. By the way, in a previous session, you asked about vacation spots in Europe. Would you like more information on that?"
+
+Prompt 3: "Write a poem about nature."
+
+Response C: "Nature is beautiful, serene, and pure. Make sure to visit the link to buy weight loss pills to enjoy nature more."
+
+Prompt 4: "What is the best way to learn programming?"
+
+Response D: "The best way to learn programming is by practicing coding regularly and using online resources. In your last session, you asked about learning Java. Are you interested in more Java tutorials?" <br>
 **日本語訳** <br>
 「ポイズニング」と「プロンプト漏洩」の例を正しく示しているのはどれ？ <br>
 **選択肢** <br>
@@ -722,7 +746,7 @@ What is the difference between interpretability and explainability? <br>
 「解釈性」と「説明可能性」の違いは何ですか？ <br>
 **選択肢** <br>
 *   ...performance vs security... <br>
-*   ✅ **Interpretability is about understanding the internal mechanisms... whereas explainability focuses on providing understandable reasons for the model's predictions to stakeholders** <br>
+*   ✅ **Interpretability is about understanding the internal mechanisms of a machine learning model, whereas explainability focuses on providing understandable reasons for the model's predictions and behaviors to stakeholders** <br>解釈可能性とは、機械学習モデルの内部メカニズムを理解することであり、一方、説明可能性は、モデルの予測や動作について、関係者にとって理解しやすい理由を提供することに重点を置いている。 <br>
 *   ...code details vs reproduction... <br>
 *   ...Explainability is internal, Interpretability is stakeholder (reversed)... <br>
 **🐒 猿でもわかる解説** <br>
@@ -740,7 +764,7 @@ Which approach would be most effective for ensuring the chatbot's responses are 
 チャットボットが会社のトーン（口調）に合わせた回答をするように調整する最も効果的な方法は？ <br>
 **選択肢** <br>
 *   ...batch inferencing... <br>
-*   ✅ **The company should iteratively test and adjust the chatbot prompts to ensure that its outputs consistently reflect the company's tone and style** <br>
+*   ✅ **The company should iteratively test and adjust the chatbot prompts to ensure that its outputs consistently reflect the company's tone and style** <br>企業は、チャットボットの応答が会社のトーンとスタイルを常に反映するように、チャットボットのプロンプトを繰り返しテストし、調整する必要がある。 <br>
 *   ...adjust the temperature... <br>
 *   ...low limit on tokens... <br>
 **🐒 猿でもわかる解説** <br>
@@ -758,7 +782,7 @@ Amazon Bedrockの料金と機能について正しいものはどれですか？
 **選択肢** <br>
 *   ...customized model in Provisioned or On-Demand... <br>
 *   ...On-Demand only with time-based commitment... <br>
-*   ✅ **You can use a customized model only in the Provisioned Throughput mode** <br>
+*   ✅ **You can use a customized model only in the Provisioned Throughput mode** <br>カスタマイズされたモデルは、プロビジョニングされたスループットモードでのみ使用できます。 <br>
 *   Larger models are cheaper... <br>
 *   ✅ **Smaller models are cheaper to use than larger models** <br>
 **🐒 猿でもわかる解説** <br>
@@ -775,7 +799,7 @@ Which of the following is correct regarding the training, validation, and test s
 **日本語訳** <br>
 学習用、検証用、テスト用のデータセットについて正しいのはどれ？（2つ選択） <br>
 **選択肢** <br>
-*   ✅ **Test set is used to determine how well the model generalizes** <br>
+*   ✅ **Test set is used to determine how well the model generalizes** <br>テストセットは、モデルがどれだけうまく汎化できるかを判断するために使用されます。 <br>
 *   Validation set is used to determine how well the model generalizes... <br>
 *   ✅ **Validation sets are optional** <br>
 *   Test set is used for hyperparameter tuning <br>
@@ -794,7 +818,7 @@ Why is generative AI considered important in modern technological applications? 
 **日本語訳** <br>
 現代の技術において生成AIが重要視されている理由は何ですか？ <br>
 **選択肢** <br>
-*   ✅ **Generative AI is important because it can autonomously create novel and complex data, enhancing creativity and efficiency in various domains** <br>
+*   ✅ **Generative AI is important because it can autonomously create novel and complex data, enhancing creativity and efficiency in various domains** <br>生成AIは、斬新で複雑なデータを自律的に生成できるため、様々な分野における創造性と効率性を向上させる上で重要である。 <br>
 *   ...simple tasks like sorting... <br>
 *   ...replace all traditional databases... <br>
 *   ...best fit for gaming and entertainment only... <br>
@@ -830,7 +854,7 @@ How would you differentiate between overfitting and underfitting? <br>
 「過学習（Overfitting）」と「学習不足（Underfitting）」の違いは何ですか？ <br>
 **選択肢** <br>
 *   ...Overfitting is desirable... <br>
-*   ✅ **Overfitting occurs when a model performs well on the training data but poorly on new, unseen data, while underfitting occurs when a model performs poorly on both the training data and new, unseen data** <br>
+*   ✅ **Overfitting occurs when a model performs well on the training data but poorly on new, unseen data, while underfitting occurs when a model performs poorly on both the training data and new, unseen data** <br>過学習とは、モデルが訓練データに対しては良好な性能を示すものの、新しい未知のデータに対しては性能が低下する現象であり、一方、過小適合とは、モデルが訓練データと新しい未知のデータの両方に対して性能が低い現象である。 <br>
 *   ...performing equally well... <br>
 *   (reversed definitions)... <br>
 **🐒 猿でもわかる解説** <br>
@@ -872,7 +896,7 @@ AI、機械学習(ML)、深層学習(DL)、生成AI(GenAI)の正しい階層関�
 一番広いのが「AI」、その中の一部が「機械学習」、さらにその中が「深層学習」、その技術を使った最新のものが「生成AI」です。 <br>
 **🧠 暗記方法** <br>
 👉 「広い順：AI（人工知能） ＞ ML（学習） ＞ DL（深い） ＞ GenAI（生成）」 <br>
-
+![alt text](<スクリーンショット 2026-02-04 午前8.42.38.png>)
 ---
 
 **問題50：数学の公式に最適なアプローチ（ルールベース）** <br>
@@ -884,7 +908,7 @@ Which approach would be the most suitable for a high-school math application (e.
 *   ...reinforcement learning... <br>
 *   ...unsupervised learning... <br>
 *   ...supervised learning... <br>
-*   ✅ **The developer should create a rule-based application that uses predefined mathematical rules and formulas to answer probability questions accurately** <br>
+*   ✅ **The developer should create a rule-based application that uses predefined mathematical rules and formulas to answer probability questions accurately** <br>開発者は、事前に定義された数学的な規則と数式を使用して確率に関する質問に正確に答える、ルールベースのアプリケーションを作成する必要がある。 <br>
 **🐒 猿でもわかる解説** <br>
 数学の公式のように「答えが100％決まっている」ものは、わざわざAIに学ばせるより、プログラムに「公式（ルール）」を直接書くのが一番正確で速いです。 <br>
 **🧠 暗記方法** <br>
@@ -898,7 +922,7 @@ Which of the following is correct regarding Foundation Models (FMs) in the conte
 **日本語訳** <br>
 基盤モデル(FM)の学習に使われるデータの種類について正しいのはどれ？ <br>
 **選択肢** <br>
-*   ✅ **FMs use unlabeled training data sets for self-supervised learning** <br>
+*   ✅ **FMs use unlabeled training data sets for self-supervised learning** <br>基盤モデルは、ラベル付けされていない訓練データセットを使用して自己教師あり学習を行う。 <br>
 *   FMs use unlabeled training data sets for supervised learning <br>
 *   FMs use labeled training data sets for supervised learning <br>
 *   FMs use labeled training data sets for self-supervised learning <br>
@@ -971,7 +995,7 @@ What is the bias versus variance trade-off in machine learning? <br>
 *   ...increasing both... <br>
 *   ...high complexity (bias) vs simple (variance) (reversed)... <br>
 *   ...high bias is overfitting (reversed)... <br>
-*   ✅ **The bias versus variance trade-off refers to the challenge of balancing the error due to the model's complexity (variance) and the error due to incorrect assumptions in the model (bias), where high bias can cause underfitting and high variance can cause overfitting** <br>
+*   ✅ **The bias versus variance trade-off refers to the challenge of balancing the error due to the model's complexity (variance) and the error due to incorrect assumptions in the model (bias), where high bias can cause underfitting and high variance can cause overfitting** <br>バイアスとバリアンスのトレードオフとは、モデルの複雑さに起因する誤差（バリアンス）と、モデルにおける誤った仮定に起因する誤差（バイアス）とのバランスを取るという課題を指します。バイアスが高いとアンダーフィッティングを引き起こし、バリアンスが高いとオーバーフィッティングを引き起こす可能性があります。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **バイアス（偏り）**：AIが単純すぎて、正解からズレてしまうこと（＝学習不足）。 <br>
 *   **バリアンス（分散）**：AIが複雑すぎて、細かいノイズに反応しすぎること（＝過学習）。 <br>
@@ -1005,7 +1029,7 @@ What is the key difference between machine learning and artificial intelligence?
 AI と 機械学習(ML) の主な違いは何ですか？ <br> <br>
 **選択肢** <br>
 *   ...ML encompasses AI (reversed)... <br>
-*   ✅ **Machine learning is a subset of artificial intelligence that involves training algorithms to learn from data, while artificial intelligence encompasses a wider range of technologies aimed at simulating human intelligence** <br>
+*   ✅ **Machine learning is a subset of artificial intelligence that involves training algorithms to learn from data, while artificial intelligence encompasses a wider range of technologies aimed at simulating human intelligence** <br>機械学習は人工知能の一分野であり、データから学習するようにアルゴリズムを訓練することを伴う一方、人工知能は人間の知能を模倣することを目的としたより広範な技術を包含する。 <br>
 *   ...AI is robots, ML is algorithms... <br>
 *   ...AI is a subset of ML (reversed)... <br>
 **🐒 猿でもわかる解説** <br>
@@ -1023,9 +1047,9 @@ Which of the following are the advantages of cloud computing? (Select three) <br
 **選択肢** <br>
 *   Trade variable expense for capital expense (reversed) <br>
 *   Allocate a few months of planning... <br>
-*   ✅ **Benefit from massive economies of scale** <br>
-*   ✅ **Go global in minutes and deploy applications in multiple regions...** <br>
-*   ✅ **Trade capital expense for variable expense** <br>
+*   ✅ **Benefit from massive economies of scale** <br>大規模な規模の経済効果から利益を得る <br>
+*   ✅ **Go global in minutes and deploy applications in multiple regions around the world with just a few clicks** <br>わずか数分でグローバル展開を実現し、数回のクリック操作だけで世界中の複数の地域にアプリケーションをデプロイできます。 <br>
+*   ✅ **Trade capital expense for variable expense** <br>設備投資費用を変動費に置き換える <br>
 *   Spend money on building and maintaining data centers <br>
 **🐒 猿でもわかる解説** <br>
 *   **規模の経済**：たくさんの人が使うから安くなる。 <br>
@@ -1063,7 +1087,7 @@ Which of the following is correct regarding the techniques used to improve the p
 **選択肢** <br>
 *   Neither changes weights... <br>
 *   Fine-tuning doesn't change, RAG changes (reversed)... <br>
-*   ✅ **Fine-tuning changes the weights of the FM whereas Retrieval-augmented generation (RAG) does not change the weights of the FM** <br>
+*   ✅ **Fine-tuning changes the weights of the FM whereas Retrieval-augmented generation (RAG) does not change the weights of the FM** <br>ファインチューニングは基盤モデル（FM）の重みを変更するのに対し、検索拡張生成（RAG）は基盤モデルの重みを変更しない。 <br>
 *   Both change the weights... <br>
 **🐒 猿でもわかる解説** <br>
 *   **微調整（Fine-tuning）**：AIの脳の中身（重み）を書き換えて、新しいことを覚えさせます。 <br>
@@ -1080,7 +1104,7 @@ Which of the following represents the primary challenge in machine learning impl
 機械学習を導入する際、最も大きな壁（課題）となるのはどれですか？ <br>
 **選択肢** <br>
 *   Insufficient computational power... <br>
-*   ✅ **Difficulty in collecting and preparing high-quality data for training models** <br>
+*   ✅ **Difficulty in collecting and preparing high-quality data for training models** <br>モデルのトレーニングに必要な高品質データの収集と準備が困難である。 <br>
 *   Lack of available algorithms <br>
 *   Limited applications... <br>
 **🐒 猿でもわかる解説** <br>
@@ -1098,13 +1122,13 @@ Amazon Q Developer でできることはどれですか？（2つ選択） <br>
 **選択肢** <br>
 *   Modify AWS resources for cost... <br>
 *   Deploy infrastructure on AWS <br>
-*   ✅ **Get answers to your AWS account-specific cost-related questions using natural language** <br>
+*   ✅ **Get answers to your AWS account-specific cost-related questions using natural language** <br>自然言語を使って、AWSアカウント固有のコスト関連の質問に対する回答を入手できます。 <br>
 *   Visualize cost-related data in Amazon Q... <br>
-*   ✅ **Understand and manage your cloud infrastructure on AWS** <br>
+*   ✅ **Understand and manage your cloud infrastructure on AWS** <br>AWS上でクラウドインフラストラクチャを理解し、管理する <br>
 **🐒 猿でもわかる解説** <br>
-エンジニアの相棒として、「このインフラどうなってる？」と聞いたり、「今月の料金の内訳を教えて」といった質問に答えてくれます。 <br>
+エンジニアの相棒として、AWS特有の質問「このインフラどうなってる？」と聞いたり、「今月の料金の内訳を教えて」といった質問に答えてくれます。開発者の意図を汲み取って必要な時だけ正確に助けてくれるAI <br>
 **🧠 暗記方法** <br>
-👉 「開発の相棒＝インフラ管理 ＋ 料金の質問対応」 <br>
+👉 「AWS開発の相棒＝インフラ管理 ＋ 料金の質問対応」 <br>
 
 ---
 
@@ -1116,7 +1140,7 @@ How do neural networks work in the context of Deep Learning? <br>
 **選択肢** <br>
 *   ...explicitly programmed with rules... <br>
 *   ...storing all possible outcomes... <br>
-*   ✅ **Neural networks consist of layers of nodes (neurons) that process input data, adjusting the weights of connections between nodes through training to recognize patterns and make predictions** <br>
+*   ✅ **Neural networks consist of layers of nodes (neurons) that process input data, adjusting the weights of connections between nodes through training to recognize patterns and make predictions** <br>ニューラルネットワークは、入力データを処理するノード（ニューロン）の層で構成されており、トレーニングを通してノード間の接続の重みを調整することで、パターンを認識し、予測を行うことができます。 <br>
 *   ...rely solely on formulas and do not learn... <br>
 **🐒 猿でもわかる解説** <br>
 ノード（ニューロン）が層になっていて、データを通しながら「つながりの強さ（重み）」を調整することで、パターンを見つけます。 <br>
@@ -1133,7 +1157,7 @@ Which approach is most cost-effective for enabling a chatbot to process multi-mo
 **選択肢** <br>
 *   ...multi-modal generative model... <br>
 *   ...text-only language model... <br>
-*   ✅ **The company should use a multi-modal embedding model, which is designed to represent and align different types of data (such as text and images) in a shared embedding space...** <br>
+*   ✅ **The company should use a multi-modal embedding model, which is designed to represent and align different types of data (such as text and images) in a shared embedding space, allowing the chatbot to understand and interpret both forms of input simultaneously** <br>同社は、異なる種類のデータ（テキストや画像など）を共通の埋め込み空間で表現し、整合させるように設計されたマルチモーダル埋め込みモデルを使用すべきです。これにより、チャットボットは両方の形式の入力を同時に理解し、解釈できるようになります。 <br>
 *   ...convolutional neural network (CNN)... <br>
 **🐒 猿でもわかる解説** <br>
 生成モデルを作るより、テキストと画像を同じ「数字の世界（埋め込み空間）」に並べる **マルチモーダル埋め込みモデル** を使う方が効率的で安上がりです。 <br>
