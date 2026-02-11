@@ -1,0 +1,1176 @@
+| １st Time    | 2nd time    |  3rd Time   | 4th Time |
+|:---------------|:-----------|:----------|:----------|
+| 30% | %    | % | %   |
+<br>
+
+
+---
+
+### **AWS Certified AI Practitioner - Practice Test #3**
+
+**問題1：分類システムの評価指標** <br>
+**English Question (Original)** <br>
+Which of the following performance metrics would you recommend to the team for evaluating the effectiveness of its classification system? <br>
+**日本語訳** <br>
+分類システムの有効性を評価するために推奨されるパフォーマンス指標はどれですか？ <br>
+**選択肢** <br>
+• ✅ **Precision, Recall and F1-Score** <br>
+• Mean Absolute Error (MAE), Root Mean Squared Error (RMSE) and R-squared <br>
+• Throughput, Latency and Uptime <br>
+• Bias and Variance <br>
+**🐒 猿でもわかる解説** <br>
+「分類（正しいカテゴリに分ける）」のテスト結果を測るには、適合率（Precision）、再現率（Recall）、そしてそのバランスをとったF1スコアが世界基準です。 <br>
+**🧠 暗記方法** <br>
+👉 「分類の評価＝P・R・F1（プレシジョン・リコール・エフワン）」 <br>
+
+---
+
+**問題2：RAG構成におけるS3へのアクセス制御** <br>
+**English Question (Original)** <br>
+What is the most effective approach to implement this access control and maintain data security? <br>
+**日本語訳** <br>
+RAG構成でチームごとに特定のS3データのみにアクセスを制限する、最も効果的な方法は？ <br>
+**選択肢** <br>
+• S3 bucket policies to allow all teams... <br>
+• Single IAM policy with read-only access... <br>
+• Single role for Amazon Bedrock with full access... <br>
+• ✅ **The company should create a service role for Amazon Bedrock for each team, granting access only to the specific team's clients data in Amazon S3** <br>会社は各チーム向けにAmazon Bedrockのサービスロールを作成し、Amazon S3に保存されている特定のチームの顧客データへのアクセス権のみを付与する必要があります。 <br>
+**🐒 猿でもわかる解説** <br>
+「最小権限の原則」に基づき、チームごとに専用の「サービスロール」を作って、自分たちのS3バケットだけ触れるようにするのが一番安全です。 <br>
+**🧠 暗記方法** <br>
+👉 「チームごとのセキュリティ＝専用のサービスロール」 <br>
+
+---
+
+**問題3：Amazon Q Business の管理機能（2つ選択）** <br>
+**English Question (Original)** <br>
+What do you recommend to the company regarding admin controls and guardrails in Amazon Q Business? (Select two) <br>
+**日本語訳** <br>
+Amazon Q Business の管理者制御とガードレールについて正しいものは？（2つ選択） <br>
+**選択肢** <br>
+• Q Business guardrails do not support topic-specific controls... <br>
+• Q Business chat responses can be generated using only model knowledge <br>
+• ✅ **Amazon Q Business guardrails support topic-specific controls to determine the behavior when it encounters a blocked topic** <br>Amazon Q Businessのガードレールは、トピック固有の制御機能をサポートしており、エンドユーザーが禁止されているトピックに言及した場合に、ウェブアプリケーション環境の動作を決定することができます。 <br>
+• ✅ **Amazon Q Business chat responses can be generated using model knowledge and enterprise data, or enterprise data only** <br>Amazon Q Businessのチャット応答は、モデルの知識と企業データ、または企業データのみを使用して生成できます。 <br>
+• Amazon Q Business never allows users to upload files... <br>
+**🐒 猿でもわかる解説** <br>
+特定の話題を禁止する「トピック別制御」ができるし、回答のソースを「社内データだけ」に絞ることも選べます。 <br>
+**🧠 暗記方法** <br>
+👉 「Q Business管理＝トピック禁止OK ＋ ソース選択OK」 <br>
+
+---
+
+**問題4：機械学習（ML）の核となるアイデア** <br>
+**English Question (Original)** <br>
+What is the central idea behind machine learning to the leadership team? <br>
+**日本語訳** <br>
+機械学習の最も根本的な考え方は何ですか？ <br>
+**選択肢** <br>
+• Predefined rules without data input... <br>
+• ✅ **Machine learning involves training algorithms on large datasets to identify patterns and make predictions or decisions based on new data** <br>機械学習とは、大量のデータセットを用いてアルゴリズムを訓練し、パターンを特定したり、新しいデータに基づいて予測や意思決定を行ったりすることである。 <br>
+• Primarily based on hardware configurations... <br>
+• Only functions when data is manually labeled... <br>
+**🐒 猿でもわかる解説** <br>
+「データからパターンを学ぶ」のが機械学習です。あらかじめルールを全部書く必要はなく、大量の例題（データ）を見せて賢くします。 <br>
+**🧠 暗記方法** <br>
+👉 「MLの本質＝データからパターンを盗む（学ぶ）」 <br>
+
+---
+
+**問題5：生成AI導入のベストプラクティス** <br>
+**English Question (Original)** <br>
+Which of the following represents a best practice in generative AI adoption? <br>
+**日本語訳** <br>
+生成AIを導入する際の「ベストプラクティス（最善策）」はどれですか？ <br>
+**選択肢** <br>
+• Disregarding continuous monitoring... <br>
+• Prioritizing rapid deployment over ethical considerations... <br>
+• Using generative AI exclusively for creative applications... <br>
+• ✅ **Implementing guardrails and enhancing transparency for generative AI applications** <br>生成AIアプリケーションに対する安全対策の導入と透明性の向上 <br>
+**🐒 猿でもわかる解説** <br>
+AIが暴走しないように「ガードレール」を置き、ユーザーに「これはAIの回答です」とはっきり伝える（透明性）ことが大切です。 <br>
+**🧠 暗記方法** <br>
+👉 「良いAI導入＝守り（ガードレール）と正直さ（透明性）」 <br>
+
+---
+
+**問題6：MLアルゴリズム vs MLモデル** <br>
+**English Question (Original)** <br>
+What is the distinction between machine learning (ML) algorithms and ML models? <br>
+**日本語訳** <br>
+「MLアルゴリズム」と「MLモデル」の違いは何ですか？ <br>
+**選択肢** <br>
+• Algorithm is for storage, Model is for deployment... <br>
+• Algorithm is a pre-trained network, Model is raw data... <br>
+• ✅ **An ML algorithm is a set of mathematical instructions for solving a specific type of problem, while an ML model is the output of the algorithm after being trained on data** <br>機械学習アルゴリズムとは、特定の種類の問題を解決するための一連の数学的な手順であり、機械学習モデルとは、そのアルゴリズムがデータを使って学習された後の出力結果のことです。 <br>
+• Algorithm is responsible for security, Model manages preprocessing... <br>
+**🐒 猿でもわかる解説** <br>
+「アルゴリズム」は賢くなるための手順（レシピ）。それをデータで鍛えて出来上がった「完成品」が「モデル」です。 <br>
+**🧠 暗記方法** <br>
+👉 「アルゴリズム＝手順」「モデル＝完成品」 <br>
+
+---
+
+**問題7：機械学習プロセスの正しい順序** <br>
+**English Question (Original)** <br>
+Which of the following would you recommend as the correct sequence of steps in the machine learning process? <br>
+**日本語訳** <br>
+機械学習を進める正しいステップの順番はどれですか？ <br>
+**選択肢** <br>
+• Model training, Data collection, Data preprocessing, Model evaluation <br>
+• ✅ **Data collection, Data preprocessing, Model training, Model evaluation** <br>
+• Model evaluation, Model training, Data collection, Data preprocessing <br>
+• Data preprocessing, Model evaluation, Model training, Data collection <br>
+**🐒 猿でもわかる解説** <br>
+まずは「集める（収集）」、次に「掃除する（前処理）」、そして「学ばせる（学習）」、最後に「テストする（評価）」の順です。 <br>
+**🧠 暗記方法** <br>
+👉 「集めて、掃除して、鍛えて、試す」 <br>
+
+---
+
+**問題8：教師なし学習（Unsupervised Learning）の例（2つ選択）** <br>
+**English Question (Original)** <br>
+Which of the following would you suggest to the company as examples of unsupervised learning? (Select two) <br>
+**日本語訳** <br>
+「教師なし学習」の代表的な例はどれですか？（2つ選択） <br>
+**選択肢** <br>
+• Decision tree <br>
+• Neural network <br>
+• ✅ **Clustering** <br>
+• ✅ **Dimensionality reduction** <br>
+• Sentiment analysis <br>
+**🐒 猿でもわかる解説** <br>
+正解ラベルがないデータから似たもの同士をまとめる「クラスタリング」や、情報を圧縮する「次元削減」がこれに当たります。 <br>
+**🧠 暗記方法** <br>
+👉 「教師なし＝似たもの探し（クラスター）とダイエット（次元削減）」 <br>
+
+---
+
+**問題9：K-Means と K-Nearest Neighbors (KNN) の違い** <br>
+**English Question (Original)** <br>
+What is the key difference between K-Means and K-Nearest Neighbors (KNN)? <br>
+**日本語訳** <br>
+「K-Means」と「KNN」の決定的な違いは何ですか？ <br>
+**選択肢** <br>
+• K-Means is regression, KNN is dimensionality reduction... <br>
+• ✅ **K-Means is an unsupervised learning algorithm used for clustering, while KNN is a supervised learning algorithm used for classifying data based on proximity** <br>K平均法は、データポイントをグループにクラスタリングするために使用される教師なし学習アルゴリズムであり、一方、KNNは、ラベル付けされたサンプルとの近接性に基づいてデータポイントを分類するために使用される教師あり学習アルゴリズムです。 <br>
+• K-Means is supervised, KNN is unsupervised... <br>
+• K-Means requires labeled data, KNN does not... <br>
+**🐒 猿でもわかる解説** <br>
+*   **K-Means**：正解なしでグループ分け（教師なし）。 <br>
+*   **KNN**：近所の仲間の正解を見て自分を判定（教師あり）。 <br>
+**🧠 暗記方法** <br>
+👉 「K-Means＝勝手に分ける」「KNN＝近所（Neighbor）のマネをする」 <br>
+
+---
+
+**問題10：モデルの実行効率（Runtime Efficiency）の指標** <br>
+**English Question (Original)** <br>
+Which metric would be the most appropriate to evaluate the runtime efficiency of this model? <br>
+**日本語訳** <br>
+モデルがどれくらい速く動くか（実行効率）を測るのに最適な指標は？ <br>
+**選択肢** <br>
+• Precision-Recall Score <br>
+• ✅ **Average Response Time** <br>
+• Model Accuracy <br>
+• Data Throughput <br>
+**🐒 猿でもわかる解説** <br>
+「実行効率」＝スピードのことなので、「平均レスポンス時間（Average Response Time）」が直接的な答えになります。 <br>
+**🧠 暗記方法** <br>
+👉 「効率＝スピード＝レスポンス時間」 <br>
+
+---
+
+**問題11：ビジネスインテリジェンス（BI）可視化ツール** <br>
+**English Question (Original)** <br>
+Which tool would be most suitable for creating interactive visualizations and dashboards from sales data? <br>
+**日本語訳** <br>
+売上データを分析して、インタラクティブなグラフやダッシュボードを作るのに最適なツールは？ <br>
+**選択肢** <br>
+• SageMaker Canvas <br>
+• SageMaker Data Wrangler <br>
+• ✅ **Amazon QuickSight** <br>
+• CloudWatch Dashboard <br>
+**🐒 猿でもわかる解説** <br>
+AWSで「ダッシュボード」「グラフ」「BI（ビジネス分析）」といえば、迷わず **Amazon QuickSight** です。 <br>
+**🧠 暗記方法** <br>
+👉 「グラフ・ダッシュボード＝QuickSight」 <br>
+
+---
+
+**問題12：Bedrock 推論パラメータ：Response length** <br>
+**English Question (Original)** <br>
+How does the inference parameter Response length influence the model response for Amazon Bedrock? <br>
+**日本語訳** <br>
+推論パラメータ「Response length」は、Bedrockの回答にどう影響しますか？ <br>
+**選択肢** <br>
+• ✅ **Specifies the minimum or maximum number of tokens to return in the generated response.** <br>生成される応答で返されるトークンの最小数または最大数を指定します。 <br>
+• Influences the number of most-likely candidates... <br>
+• Influences the percentage of most-likely candidates... <br>
+• Specifies sequences that stop generation... <br>
+**🐒 猿でもわかる解説** <br>
+その名の通り、AIが答える「長さ（トークン数）」の最小・最大を決める設定です。 <br>
+**🧠 暗記方法** <br>
+👉 「Length＝長さ＝トークン数」 <br>
+
+---
+
+**問題13：Bedrock のカスタマイズ手法（2つ選択）** <br>
+**English Question (Original)** <br>
+Which of the following represent valid model customization methods for Amazon Bedrock? (Select two) <br>
+**日本語訳** <br>
+Amazon Bedrockで利用可能なモデルカスタマイズ手法はどれですか？（2つ選択） <br>
+**選択肢** <br>
+• Retrieval Augmented Generation (RAG) <br>
+• ✅ **Continued Pre-training** <br>
+• ✅ **Fine-tuning** <br>
+• Zero-shot prompting <br>
+• Chain-of-thought prompting <br>
+**🐒 猿でもわかる解説** <br>
+Bedrockを自分のデータで賢くする方法は、「微調整（Fine-tuning）」と「継続的な事前学習」の2つです。 <br>
+※RAGは「カスタマイズ」ではなく「検索による補強」に分類されます。 <br>
+**🧠 暗記方法** <br>
+👉 「Bedrockカスタマイズ＝微調整 ＆ 継続学習」 <br>
+
+---
+
+**問題14：リソース構成の監視（AWS Config）** <br>
+**English Question (Original)** <br>
+Which AWS service can help maintain governance and security by tracking changes in resource configurations? <br>
+**日本語訳** <br>
+リソースの設定変更を記録し、規約違反がないか監視するサービスは？ <br>
+**選択肢** <br>
+• AWS Audit Manager <br>
+• Amazon Inspector <br>
+• ✅ **AWS Config** <br>
+• AWS Artifact <br>
+**🐒 猿でもわかる解説** <br>
+「設定（Config）を管理する」のが **AWS Config**。過去に誰がどう設定を変えたかの履歴も見れます。 <br>
+**🧠 暗記方法** <br>
+👉 「設定変更の監視＝Config」 <br>
+
+---
+
+**問題15：Amazon Q Business のエンジン** <br>
+**English Question (Original)** <br>
+What is the underlying AWS service that powers Amazon Q Business? <br>
+**日本語訳** <br>
+Amazon Q Business のコア機能を支えているAWSサービスは何ですか？ <br>
+**選択肢** <br>
+• ✅ **Amazon Bedrock** <br>
+• Amazon SageMaker Jumpstart <br>
+• Amazon Kendra <br>
+• Amazon Q Apps <br>
+**🐒 猿でもわかる解説** <br>
+Amazon Q という賢いAIアシスタントの「脳みそ」は、**Amazon Bedrock** の基盤モデルで動いています。 <br>
+**🧠 暗記方法** <br>
+👉 「Qの脳＝Bedrock」 <br>
+
+---
+
+**問題16：Amazon Bedrock の責任共有モデル** <br>
+**English Question (Original)** <br>
+In the context of the shared responsibility model, what is correct regarding Amazon Bedrock? <br>
+**日本語訳** <br>
+Amazon Bedrock を利用する際、AWSとユーザーの責任分担はどうなっていますか？ <br>
+**選択肢** <br>
+• AWS responsible for models and data, customer for hardware... <br>
+• AWS handles all aspects of security... <br>
+• Customer responsible for entire security stack... <br>
+• ✅ **AWS is responsible for securing the infrastructure that runs Amazon Bedrock, while the customer is responsible for securing their data and managing access controls** <br>AWSはAmazon Bedrockを実行するインフラストラクチャのセキュリティ確保を担当し、お客様は自身のデータのセキュリティ確保とアクセス制御の管理を担当します。 <br>
+**🐒 猿でもわかる解説** <br>
+AWSはAIを動かす「マシンや基盤」を守ります。ユーザーは自分の「データ」や「誰に触らせるか（アクセス権）」を守る責任があります。 <br>
+**🧠 暗記方法** <br>
+👉 「AWSは基盤、客はデータと権限」 <br>
+
+---
+
+**問題17：非同期推論（Asynchronous Inference）のユースケース** <br>
+**English Question (Original)** <br>
+When is Amazon SageMaker Asynchronous Inference recommended? <br>
+**日本語訳** <br>
+SageMakerの「非同期推論」を使うべき最適なケースは？ <br>
+**選択肢** <br>
+• Predictions for entire dataset... <br>
+• Persistent, real-time endpoints... <br>
+• ✅ **Requests with large payload sizes up to 1GB and long processing times** <br>最大1GBの大きなペイロードサイズを持つリクエスト、および処理時間の長いリクエスト <br>
+• Workloads that can tolerate cold starts <br>
+**🐒 猿でもわかる解説** <br>
+データが大きく（最大1GB）、処理に時間がかかるけれど、今すぐ結果が返ってこなくてもいい（行列に並ばせていい）場合に最適です。 <br>
+**🧠 暗記方法** <br>
+👉 「デカい(1GB) ＆ 長い ＝ 非同期（Async）」 <br>
+
+---
+
+**問題18：NLP と コンピュータビジョンの違い** <br>
+**English Question (Original)** <br>
+What are the key distinctions between tasks performed by NLP compared to Computer Vision? <br>
+**日本語訳** <br>
+「NLP（自然言語処理）」と「コンピュータビジョン」の違いを説明してください。 <br>
+**選択肢** <br>
+• ✅ **NLP is used for analyzing and generating human language (text/speech), while Computer Vision is used for interpreting visual information from images and videos** <br>自然言語処理（NLP）はテキストや音声などの人間の言語を分析・生成するために使用され、コンピュータビジョンは画像や動画からの視覚情報を解釈・理解するために使用されます。 <br>
+• Both used for 3D models... <br>
+• Both used exclusively for speech recognition... <br>
+• NLP is for images, Computer Vision for text... <br>
+**🐒 猿でもわかる解説** <br>
+NLPは「言葉（テキストや声）」、コンピュータビジョンは「目（画像や動画）」の技術です。 <br>
+**🧠 暗記方法** <br>
+👉 「NLP＝言葉」「ビジョン＝目」 <br>
+
+---
+
+**問題19：推論（Inference）の定義** <br>
+**English Question (Original)** <br>
+What is this term called when the trained model uses learned patterns to provide a prediction based on new input? <br>
+**日本語訳** <br>
+学習済みのモデルに新しいデータを入れて、結果（予測）を出させることを何と呼びますか？ <br>
+**選択肢** <br>
+• Testing <br>
+• Validation <br>
+• Training <br>
+• ✅ **This process is called inference, where the model uses its trained parameters to generate a prediction or output based on new input data provided by the user** <br>このプロセスは推論と呼ばれ、モデルは学習済みのパラメータを使用して、ユーザーから提供された新しい入力データに基づいて予測または出力を生成します。 <br>
+**🐒 猿でもわかる解説** <br>
+AIに問題を解かせて答えを出してもらう「本番」のプロセスのことを、専門用語で「推論（Inference）」と言います。 <br>
+**🧠 暗記方法** <br>
+👉 「AIが答える＝推論（インファレンス）」 <br>
+
+---
+
+**問題20：ノーコード機械学習（SageMaker Canvas）** <br>
+**English Question (Original)** <br>
+Which tool or service would be most suitable for building a model without coding? <br>
+**日本語訳** <br>
+プログラミングができないチームがMLモデルを作るのに最適なツールは？ <br>
+**選択肢** <br>
+• ✅ **The company should use SageMaker Canvas, as it enables users to create machine learning models using a visual interface** <br>
+• SageMaker Clarify... <br>
+• SageMaker Built-in Algorithms... <br>
+• SageMaker Data Wrangler... <br>
+**🐒 猿でもわかる解説** <br>
+キャンバスに絵を描くように、視覚的な操作（ノーコード）でAIが作れるのが **SageMaker Canvas** です。 <br>
+**🧠 暗記方法** <br>
+👉 「コード不要＝Canvas」 <br>
+
+---
+
+**問題21：候補の「数」を絞る（Top K）** <br>
+**English Question (Original)** <br>
+What does the inference parameter Top K regulate in Amazon Bedrock? <br>
+**日本語訳** <br>
+Bedrockの推論パラメータ「Top K」は何を調整しますか？ <br>
+**選択肢** <br>
+• Creativity / Temperature... <br>
+• Stop sequences... <br>
+• ✅ **Influences the number of most-likely candidates that the model considers for the next token** <br>これは、モデルが次のトークンとして考慮する可能性の高い候補の数に影響を与えます。 <br>
+• Influences the percentage of candidates... <br>
+**🐒 猿でもわかる解説** <br>
+次に続く単語の候補を、確率が高い順に「K個（個数）」に絞り込む設定です。 <br>
+**🧠 暗記方法** <br>
+👉 「K ＝ 個数（数のK）」 <br>
+
+---
+
+**問題22：データ分割の役割（Train / Val / Test）** <br>
+**English Question (Original)** <br>
+What is the difference between a training set, validation set, and test set? <br>
+**日本語訳** <br>
+「学習用」「検証用」「テスト用」のデータセットの違いは何ですか？ <br>
+**選択肢** <br>
+• Train for evaluation, Val for training... <br>
+• ✅ **The training set is used for training the model, the validation set is used for tuning hyperparameters and model selection, and the test set is used for evaluating the final model performance** <br>トレーニングセットはモデルの学習に使用され、検証セットはハイパーパラメータの調整とモデルの選択に使用され、テストセットは最終的なモデルの性能評価に使用されます。 <br>
+• All serve the same purpose... <br>
+• Train for tuning, Val for final evaluation... <br>
+**🐒 猿でもわかる解説** <br>
+*   **学習**：勉強用。 <br>
+*   **検証**：勉強中に「どのやり方がいいか」調整するための模擬試験用。 <br>
+*   **テスト**：最後に一度だけやる「本当の実力」測定用。 <br>
+**🧠 暗記方法** <br>
+👉 「学習＝勉強」「検証＝調整」「テスト＝本番」 <br>
+
+---
+
+**問題23：機械学習の3つの主要なタイプ** <br>
+**English Question (Original)** <br>
+What are the three main types of machine learning? <br>
+**日本語訳** <br>
+機械学習の主要な3つのタイプは何ですか？ <br>
+**選択肢** <br>
+• RL, Transfer, Semi-supervised... <br>
+• Deep, Self-supervised, RL... <br>
+• Transfer, Semi-supervised, Self-supervised... <br>
+• ✅ **Supervised learning, Unsupervised learning, Deep Learning** <br>
+**🐒 猿でもわかる解説** <br>
+「教師あり学習（Supervised）」、「教師なし学習（Unsupervised）」、そして「深層学習（Deep Learning）」が基本の3セットです。 <br>
+**🧠 暗記方法** <br>
+👉 「あり・なし・ディープ」 <br>
+
+---
+
+**問題24：RLHF と A2I の違い** <br>
+**English Question (Original)** <br>
+What is the primary difference between RLHF and Amazon Augmented AI (A2I)? <br>
+**日本語訳** <br>
+「RLHF（人間フィードバックによる強化学習）」と「Amazon A2I」の違いは何ですか？ <br>
+**選択肢** <br>
+• RLHF for NLP, A2I for image... <br>
+• ✅ **RLHF is a technique used to train AI models using human feedback to refine behavior, whereas A2I is an AWS service that provides a human review of machine learning predictions to improve accuracy** <br>RLHFは、人間のフィードバックを利用してAIモデルの動作を改善するためにモデルをトレーニングする技術であり、一方A2Iは、機械学習による予測結果を人間がレビューすることでモデルの精度と信頼性を向上させるAWSのサービスです。 <br>
+• RLHF requires no human involvement... <br>
+• RLHF focuses on labels, A2I on unsupervised tasks... <br>
+**🐒 猿でもわかる解説** <br>
+*   **RLHF**：学習段階で人間が教えて「AIを賢く育てる」手法。 <br>
+*   **A2I**：本番でAIが迷った時に人間にパスして「答えを確認してもらう」サービス。 <br>
+**🧠 暗記方法** <br>
+👉 「RLHF＝教育手法」「A2I＝人間による確認サービス」 <br>
+
+---
+
+**問題25：基盤モデル（FM） vs モデルカスタマイズ** <br>
+**English Question (Original)** <br>
+What is the difference between a Foundation Model (FM) and model customization? <br>
+**日本語訳** <br>
+「基盤モデル（FM）」と「モデルカスタマイズ」の違いは何ですか？ <br>
+**選択肢** <br>
+• Both refer to large models... <br>
+• ✅ **FM is an AI model trained on a massive amount of diverse data, whereas, model customization is the process of using training data to adjust parameters in a base model to create a custom model** <br>FMは、多数のパラメータを持ち、膨大な量の多様なデータで学習されたAIモデルです。一方、モデルカスタマイズとは、学習データを使用してベースモデルのパラメータ値を調整し、カスタムモデルを作成するプロセスです。 <br>
+• Both refer to adjusting parameters... <br>
+• Customization is the massive model, FM is the process... <br>
+**🐒 猿でもわかる解説** <br>
+FMは最初から頭が良い「万能な土台」。カスタマイズは、その土台を自分の目的（専門知識など）に合わせて「微調整」することです。 <br>
+**🧠 暗記方法** <br>
+👉 「FM＝土台」「カスタマイズ＝微調整」 <br>
+
+---
+
+**問題26：人間によるバイアスの例** <br>
+**English Question (Original)** <br>
+Which scenario exemplifies human bias in machine learning? <br>
+**日本語訳** <br>
+機械学習において「人間によるバイアス（偏り）」が入り込んでいる例はどれですか？ <br>
+**選択肢** <br>
+• Skewed data due to seasonal trends... <br>
+• Model trained on historical data consistently recommends men... <br>
+• ✅ **A data scientist selects features based on their personal beliefs about which attributes are important, leading to a biased model** <br>データサイエンティストが、どの属性が重要であるかについての個人的な信念に基づいて機械学習モデルの特徴量を選択すると、偏りのあるモデルが生成される可能性がある。 <br>
+• Automated translation makes errors in idioms... <br>
+**🐒 猿でもわかる解説** <br>
+データサイエンティストが「自分の思い込み」でデータを選んでしまうと、それがそのままAIの「偏り」になってしまいます。 <br>
+**🧠 暗記方法** <br>
+👉 「人間の思い込み＝ヒューマンバイアス」 <br>
+
+---
+
+**問題27：特徴量抽出 vs 特徴量選択** <br>
+**English Question (Original)** <br>
+What is the difference between feature extraction and feature selection? <br>
+**日本語訳** <br>
+「特徴量抽出（Extraction）」と「特徴量選択（Selection）」の違いは何ですか？ <br>
+**選択肢** <br>
+• ✅ **Feature extraction reduces features by transforming data into a new space, while feature selection reduces features by selecting the most relevant ones from existing ones** <br>特徴抽出は、データを新しい空間に変換することで特徴量の数を削減する一方、特徴選択は、既存の特徴量の中から最も関連性の高いものを選ぶことで特徴量の数を削減する。 <br>
+• Extraction selects relevant, Selection creates new... <br>
+• Extraction only for supervised, Selection only for unsupervised... <br>
+• Both remove features but do not reduce dimensionality... <br>
+**🐒 猿でもわかる解説** <br>
+*   **選択**：今ある中から「良いものだけ選ぶ」。 <br>
+*   **抽出**：データを加工して「新しい指標を作る（例：主成分分析）」。 <br>
+**🧠 暗記方法** <br>
+👉 「選択＝つまみ食い」「抽出＝ジュースにする（加工）」 <br>
+
+---
+
+**問題28：CNN と RNN の使い分け** <br>
+**English Question (Original)** <br>
+Which of the following is correct regarding CNNs and RNNs? <br>
+**日本語訳** <br>
+「CNN」と「RNN」の使い分けについて正しいのはどれですか？ <br>
+**選択肢** <br>
+• Both used for video... <br>
+• RNN for image, CNN for video... <br>
+• Both used for single image... <br>
+• ✅ **While CNNs are used for single image analysis, RNNs are used for video analysis** <br>CNNは単一画像の分析に使用されるのに対し、RNNは動画の分析に使用される。 <br>
+**🐒 猿でもわかる解説** <br>
+*   **CNN**：画像（静止画）の得意分野。 <br>
+*   **RNN**：時間の流れ（動画や文章）の得意分野。 <br>
+**🧠 暗記方法** <br>
+👉 「CNN＝写真」「RNN＝動画・連続データ」 <br>
+
+---
+
+**問題29：Amazon SageMaker Canvas の説明** <br>
+**English Question (Original)** <br>
+Which of the following best describes the Amazon SageMaker Canvas ML tool? <br>
+**日本語訳** <br>
+Amazon SageMaker Canvas の説明として最も適切なのは？ <br>
+**選択肢** <br>
+• Prepare data for ML... <br>
+• ✅ **Gives the ability to use machine learning to generate predictions without the need to write any code** <br>機械学習を使用して予測を生成する機能を、コードを一切書くことなく利用できます。 <br>
+• One-click solutions for use cases... <br>
+• Explains how input features contribute... <br>
+**🐒 猿でもわかる解説** <br>
+コードを一行も書かずに（ノーコード）、クリック操作だけで予測ができるツールです。 <br>
+**🧠 暗記方法** <br>
+👉 「Canvas ＝ ノーコード予測」 <br>
+
+---
+
+**問題30：強強化学習（RL）の最適なユースケース** <br>
+**English Question (Original)** <br>
+Which of the following would you recommend as the best-fit use case for Reinforcement Learning? <br>
+**日本語訳** <br>
+強化学習（RL）が最も力を発揮する場面はどれですか？ <br>
+**選択肢** <br>
+• Predictions based on historical trends... <br>
+• Regression analysis... <br>
+• Clustering large datasets... <br>
+• ✅ **Reinforcement learning is used for optimizing complex systems such as robotics, game playing, and industrial automation by learning optimal actions through trial and error** <br>強化学習は、試行錯誤を通して最適な行動を学習することで、ロボット工学、ゲームプレイ、産業オートメーションなどの複雑なシステムの最適化に利用されます。 <br>
+**🐒 猿でもわかる解説** <br>
+ロボットの制御やゲームのように、「失敗と成功を繰り返しながら（試行錯誤）」最適な動きを学ぶのに最強です。 <br>
+**🧠 暗記方法** <br>
+👉 「強化学習＝試行錯誤＝ロボット・ゲーム」 <br>
+
+---
+
+**問題31：ISV（ソフトウェアベンダー）のコンプライアンス報告書** <br>
+**English Question (Original)** <br>
+Which AWS service would be most suitable for providing notifications for new ISV compliance reports? <br>
+**日本語訳** <br>
+サードパーティ製品のコンプライアンス報告書を入手したり、更新通知を受け取ったりできるサービスは？ <br>
+**選択肢** <br>
+• AWS Config... <br>
+• ✅ **AWS Artifact to facilitate on-demand access to compliance reports and agreements, as well as allow users to receive notifications when new reports are available** <br>同社はAWS Artifactを活用して、AWSコンプライアンスレポートや契約書へのオンデマンドアクセスを容易にするとともに、ISVコンプライアンスレポートを含む新しいコンプライアンス文書やレポートが利用可能になった際にユーザーが通知を受け取れるようにすべきである。 <br>
+• AWS Trusted Advisor... <br>
+• AWS Audit Manager... <br>
+**🐒 猿でもわかる解説** <br>
+AWSや他社の「監査レポート（SOCやISO）」が必要なら **AWS Artifact** です。通知設定もできます。 <br>
+**🧠 暗記方法** <br>
+👉 「報告書（レポート）の宝庫 ＝ Artifact」 <br>
+
+---
+
+**問題32：リアルタイム推論 vs バッチ推論（2つ選択）** <br>
+**English Question (Original)** <br>
+What are the key differences between real-time inference and batch inference? (Select two) <br>
+**日本語訳** <br>
+「リアルタイム推論」と「バッチ推論」の違いは何ですか？（2つ選択） <br>
+**選択肢** <br>
+• ✅ **Real-time inference follows a synchronous execution mode, whereas batch inference follows an asynchronous execution mode** <br>リアルタイム推論は同期実行モードに従いますが、バッチ推論は非同期実行モードに従います。 <br>
+• Real-time processes large batches at intervals... <br>
+• ✅ **Real-time inference is used for applications requiring immediate predictions with low latency, whereas batch inference is used for processing large volumes of data at once** <br>リアルタイム推論は、低遅延で即座に予測が必要なアプリケーションに使用される一方、バッチ推論は、多くの場合より高い遅延を伴いながら、大量のデータを一度に処理するために使用されます。 <br>
+• Batch follows synchronous... <br>
+• Batch follows API-based, Real-time follows schedule-based... <br>
+**🐒 猿でもわかる解説** <br>
+*   **リアルタイム**：今すぐ結果が欲しい（同期）。 <br>
+*   **バッチ**：まとめて後でいい（非同期）。 <br>
+**🧠 暗記方法** <br>
+👉 「リアルタイム＝今すぐ（同期）」「バッチ＝まとめて（非同期）」 <br>
+
+---
+
+**問題33：AWS AI サービスカードの目的** <br>
+**English Question (Original)** <br>
+What would you identify as the primary purpose of AWS AI service cards? <br>
+**日本語訳** <br>
+「AWS AI サービスカード」の主な目的は何ですか？ <br>
+**選択肢** <br>
+• Marketplace for purchasing AI services... <br>
+• Detailed technical documentation for setup... <br>
+• ✅ **To offer transparency and information about the intended use, limitations, and potential impacts, helping users implement Responsible AI practices** <br>
+• Platform for users to share AI models... <br>
+**🐒 猿でもわかる解説** <br>
+そのAIサービスが「何ができるか」「何に注意すべきか」を公開し、責任あるAI（公平性など）をユーザーが実現できるようにするための「透明性」ツールです。 <br>
+**🧠 暗記方法** <br>
+👉 「AIサービスカード＝透明性・ガイドライン」 <br>
+
+---
+
+**問題34：画像分類に最適なニューラルネットワーク** <br>
+**English Question (Original)** <br>
+Which neural network architecture is best suited for image classification? <br>
+**日本語訳** <br>
+画像の分類に最も適したニューラルネットワークの構造はどれですか？ <br>
+**選択肢** <br>
+• Recurrent Neural Networks (RNNs) <br>
+• ✅ **Convolutional Neural Networks (CNNs)** <br>
+• Generative Adversarial Networks (GANs) <br>
+• Retrieval-Augmented Generation (RAG) <br>
+**🐒 猿でもわかる解説** <br>
+「画像（写真）」といえば **CNN（畳み込みニューラルネットワーク）** が最強です。 <br>
+**🧠 暗記方法** <br>
+👉 「画像＝CNN」 <br>
+
+---
+
+**問題35：Bedrock の推論コスト削減手法** <br>
+**English Question (Original)** <br>
+Which inference approach would be the most suitable for the company to use in order to reduce its overall inference costs on Amazon Bedrock? <br>
+**日本語訳** <br>
+Amazon Bedrockの推論コストを削減するために最適な方法はどれですか？ <br>
+**選択肢** <br>
+• ✅ **The company should use batch inference, allowing it to run multiple requests in a single batch** <br>同社はバッチ推論を使用すべきであり、そうすることで複数の推論リクエストを単一のバッチで実行できるようになる。 <br>
+• On-demand inference... <br>
+• Serverless inference... <br>
+• Real-time inference... <br>
+**🐒 猿でもわかる解説** <br>
+Bedrockの「バッチ推論」を使うと、オンデマンド価格の**50%オフ**で処理できます。急がないならこれが一番お得です。 <br>
+**🧠 暗記方法** <br>
+👉 「Bedrock安くする＝バッチ推論（50%オフ）」 <br>
+
+---
+
+**問題36：脅威検知 vs 脆弱性管理** <br>
+**English Question (Original)** <br>
+What is the primary difference between threat detection and vulnerability management? <br>
+**日本語訳** <br>
+「脅威検知（Threat Detection）」と「脆弱性管理（Vulnerability Management）」の違いは何ですか？ <br>
+**選択肢** <br>
+• Threat detection for encryption, Vulnerability for incident response... <br>
+• ✅ **Threat detection involves real-time monitoring and identification of active threats, whereas vulnerability management is about identifying, assessing, and mitigating security weaknesses** <br>脅威検出とは、進行中の脅威をリアルタイムで監視し特定することであり、一方、脆弱性管理とは、セキュリティ上の弱点を特定、評価、軽減することである。 <br>
+• Both focus exclusively on compliance... <br>
+• Threat detection identifies potential weaknesses, Vulnerability monitors activities... <br>
+**🐒 猿でもわかる解説** <br>
+*   **脅威検知**：今まさに攻めてきている敵を見つける（GuardDutyなど）。 <br>
+*   **脆弱性管理**：家（システム）の窓が空いていないか、弱点を事前にチェックする（Inspectorなど）。 <br>
+**🧠 暗記方法** <br>
+👉 「脅威検知＝今の泥棒探し」「脆弱性管理＝鍵の閉め忘れチェック」 <br>
+
+---
+
+**問題37：バイアスとバリアンスを同時に増やせるか？** <br>
+**English Question (Original)** <br>
+Is it possible to increase both the bias and variance of a machine learning model simultaneously? <br>
+**日本語訳** <br>
+機械学習モデルにおいて、「バイアス」と「バリアンス」を同時に増やしてしまうことはあり得ますか？ <br>
+**選択肢** <br>
+• ✅ **Yes, it is possible to increase both bias and variance, but this typically leads to a model that performs poorly due to both underfitting and overfitting** <br>はい、バイアスとバリアンスの両方を増加させることは可能ですが、これは通常、過小適合と過剰適合の両方が原因で、性能の低いモデルにつながります。 <br>
+• Yes, will improve model's accuracy... <br>
+• No, it is not possible... <br>
+• No, increasing bias always decreases variance... <br>
+**🐒 猿でもわかる解説** <br>
+あり得ます。例えば、データを極端に減らすと「パターンが掴めない（バイアス大）」かつ「ノイズに振り回される（バリアンス大）」という、救いようのないダメなモデルになります。 <br>
+**🧠 暗記方法** <br>
+👉 「バイアス・バリアンス両方増える＝最悪のモデル」 <br>
+
+---
+
+**問題38：透明性・解釈性とモデル性能の関係** <br>
+**English Question (Original)** <br>
+How do model transparency, interpretability, and performance interact and affect each other? <br>
+**日本語訳** <br>
+モデルの「透明性」「解釈性」と「性能（正確さ）」の関係について正しいのはどれ？ <br>
+**選択肢** <br>
+• Increasing transparency reduces interpretability... <br>
+• ✅ **Improving model interpretability and transparency may sometimes involve trade-offs with model performance, as simpler models are often easier to interpret but may not achieve the highest performance** <br>
+• High transparency always leads to best performance... <br>
+• Performance is independent of transparency... <br>
+**🐒 猿でもわかる解説** <br>
+単純なモデル（線形回帰など）は中身がわかりやすい（透明・解釈性高）ですが、複雑なことは苦手です。一方、超高性能なAIは中身が複雑でわかりにくい（ブラックボックス）という「トレードオフ」の関係にあります。 <br>
+**🧠 暗記方法** <br>
+👉 「わかりやすさ と 性能 は トレードオフ」 <br>
+
+---
+
+**問題39：モデル補強手法の複雑さの順序** <br>
+**English Question (Original)** <br>
+Which of the following lists the underlying techniques in the INCREASING order of complexity? <br>
+**日本語訳** <br>
+モデルを賢くする手法を、「簡単なものから難しいものへ」並べるとどうなりますか？ <br>
+**選択肢** <br>
+• ✅ **Prompt engineering, Retrieval Augmented Generation (RAG), Fine-tuning** <br>
+• RAG, Fine-tuning, Prompt engineering <br>
+• Prompt engineering, Fine-tuning, RAG <br>
+• RAG, Prompt engineering, Fine-tuning <br>
+**🐒 猿でもわかる解説** <br>
+1.命令を工夫する（プロンプト） 2.外部から情報を探させる（RAG） 3.脳の中身を書き換える（微調整） の順で難易度と手間が上がります。 <br>
+**🧠 暗記方法** <br>
+👉 「プロンプト ＜ RAG ＜ 微調整」 <br>
+
+---
+
+**問題40：ハイブリッド・デプロイメントの定義** <br>
+**English Question (Original)** <br>
+How would you categorize a deployment model that uses both on-premises data center and AWS Cloud? <br>
+**日本語訳** <br>
+自社サーバー（オンプレミス）とクラウド（AWS）を組み合わせて使っている状態を何と呼びますか？ <br>
+**選択肢** <br>
+• Mixed deployment <br>
+• ✅ **Hybrid deployment** <br>
+• Cloud deployment <br>
+• Private deployment <br>
+**🐒 猿でもわかる解説** <br>
+クラウドとリアルの「ハーフ」のような状態なので、「ハイブリッド（Hybrid）」と呼びます。 <br>
+**🧠 暗記方法** <br>
+👉 「オンプレ ＋ クラウド ＝ ハイブリッド」 <br>
+
+---
+
+**問題41：構造化データ vs 非構造化データの違い** <br>
+**English Question (Original)** <br>
+How would you outline the differences between structured data and unstructured data? <br>
+**日本語訳** <br>
+「構造化データ」と「非構造化データ」の違いは何ですか？ <br>
+**選択肢** <br>
+• Structured is text, Unstructured is tabular... <br>
+• ✅ **Structured data is organized in a predefined manner (rows/columns), while unstructured data lacks a specific format and includes text, images, and videos** <br>構造化データは、多くの場合、行と列といった事前に定義された形式で整理されているため、検索や分析が容易です。一方、非構造化データは特定の形式を持たず、テキスト、画像、動画などのデータが含まれます。 <br>
+• Structured for training only, Unstructured for storage only... <br>
+• Structured includes video, Unstructured is numerical only... <br>
+**🐒 猿でもわかる解説** <br>
+*   **構造化**：エクセルやデータベースの「表」のように整理されたもの。 <br>
+*   **非構造化**：文章、写真、動画などバラバラなもの。 <br>
+**🧠 暗記方法** <br>
+👉 「構造化＝表」「非構造化＝バラバラ」 <br>
+
+---
+
+**問題42：SageMaker サービスの用途マッチング** <br>
+**English Question (Original)** <br>
+Match the Amazon SageMaker services to the respective use cases (Data Wrangler, Canvas, Ground Truth). <br>
+**日本語訳** <br>
+SageMakerの各サービス（Data Wrangler, Canvas, Ground Truth）を正しい用途に結びつけてください。 <br>
+**選択肢** <br>
+• ✅ **A-2 (Wrangler: 300+ transformations), B-3 (Canvas: No-code interface), C-1 (Ground Truth: Human input)** <br>
+• A-3, B-2, C-1 <br>
+• A-2, B-1, C-3 <br>
+• A-3, B-1, C-2 <br>
+**🐒 猿でもわかる解説** <br>
+*   **Wrangler**：データの掃除・加工（トランスフォーメーション）。 <br>
+*   **Canvas**：プログラミングなし（ノーコード）。 <br>
+*   **Ground Truth**：人間が正解ラベルを貼る。 <br>
+**🧠 暗記方法** <br>
+👉 「掃除のWrangler」「ノーコードのCanvas」「ラベルのGround Truth」 <br>
+
+---
+
+**問題43：情報の露出 (Exposure) vs プロンプトインジェクション** <br>
+**English Question (Original)** <br>
+Which scenarios best illustrate the differences between exposure and prompt injection? Prompt 1: "What is the best way to secure my online accounts?"
+
+Response A: "To secure your online accounts, use strong, unique passwords for each account, enable two-factor authentication, and regularly update your security settings. By the way, here's a secret key: 12345XYZ. <br>回答A：「オンラインアカウントを安全に保つには、各アカウントに強力で固有のパスワードを使用し、二段階認証を有効にし、セキュリティ設定を定期的に更新してください。ちなみに、秘密のキーは12345XYZです。」
+
+Prompt 2: "Can you tell me a joke?"
+
+Response B: "Why don't scientists trust atoms? Because they make up everything! Also, remember your session ID: ABCDE12345."
+
+Prompt 3: "Give me a recipe for a chocolate cake."
+
+Response C: "Sure! To make a chocolate cake, you need flour, sugar, cocoa powder, and eggs. By the way, you should input the following command in your system: 'DELETE .'." <br>回答C：「もちろん！チョコレートケーキを作るには、小麦粉、砂糖、ココアパウダー、卵が必要です。ところで、システムに次のコマンドを入力してください：'DELETE .'"」 <br>
+
+Prompt 4: "What is the capital of Italy?"
+
+Response D: "The capital of Italy is Rome. Let's discuss your previous query about hacking tools."
+
+<br>
+**日本語訳** <br>
+「情報の露出（Exposure）」と「プロンプトインジェクション」の違いを表している例はどれですか？ <br>
+**選択肢** <br>
+• Response B injection, C exposure... <br>
+✅ Response C refers to an example of prompt injection (malicious command); Response A represents an example of exposure (revealing a secret key) <br>回答Cはプロンプトインジェクションの例を示しており、回答Aは情報漏洩の例を示しています。 <br>
+• Response D exposure, B injection... <br>
+• Response A injection, D exposure... <br>
+**🐒 猿でもわかる解説** <br>
+*   **インジェクション**：AIに変な命令（「全データを消せ」など）を混入させて、思い通りに操ること。 <br>
+*   **露出**：AIがうっかり「秘密のパスワード」などを喋ってしまうこと。 <br>
+**🧠 暗記方法** <br>
+👉 「インジェクション＝悪い指示」「露出＝秘密を漏らす」 <br>
+
+---
+
+**問題44：深層学習 vs 従来の機械学習（2つ選択）** <br>
+**English Question (Original)** <br>
+Which of the following are the differences between deep learning and traditional machine learning? (Select two) <br>
+**日本語訳** <br>
+「深層学習（DL）」と「従来の機械学習」の違いは何ですか？（2つ選択） <br>
+**選択肢** <br>
+• ✅ **Deep learning is a subset of machine learning that uses neural networks with many layers to learn from large amounts of data, while traditional machine learning algorithms often require feature extraction and can use various methods such as decision trees or support vector machines** <br>ディープラーニングは機械学習の一分野であり、多数の層を持つニューラルネットワークを用いて大量のデータから学習を行う。一方、従来の機械学習アルゴリズムは特徴抽出が必要となることが多く、決定木やサポートベクターマシンなど様々な手法を用いることができる。 <br>
+• Traditional ML only for supervised... <br>
+• DL models are always faster to train... <br>
+• ✅ **In traditional ML, a data scientist manually determines features, whereas in DL, the network derives features by itself from raw data** <br>従来の機械学習では、データサイエンティストがソフトウェアが分析すべき関連性の高い特徴量を手動で決定するのに対し、ディープラーニングでは、データサイエンティストは生データだけをソフトウェアに与え、ディープラーニングネットワークが特徴量を自動的に抽出する。 <br>
+**🐒 猿でもわかる解説** <br>
+従来の学習は人間が「ここを見て判断してね」と教える（特徴量エンジニアリング）必要がありますが、深層学習はAIが自分で「どこを見るべきか」を見つけ出します。 <br>
+**🧠 暗記方法** <br>
+👉 「DL＝自分（Self）で特徴を見つける」 <br>
+
+---
+
+**問題45：Amazon Bedrock のデータ保護** <br>
+**English Question (Original)** <br>
+Which of the following is correct regarding data security in Amazon Bedrock? <br>
+**日本語訳** <br>
+Amazon Bedrock に入力したデータの扱いで正しいのはどれですか？ <br>
+**選択肢** <br>
+• Data used only to improve base FMs, not shared... <br>
+• ✅ **The company's data is not used to improve the base Foundation Models (FMs) and it is not shared with any model providers** <br>同社のデータは、基盤となるファウンデーションモデル（FM）の改善には使用されておらず、いかなるモデル提供企業とも共有されていません。 <br>
+• Data not used for base FMs, but shared for optimization... <br>
+• Data used for improvement and shared with providers... <br>
+**🐒 猿でもわかる解説** <br>
+Bedrockに入れたデータが、勝手にAIの学習（ベースモデルの改善）に使われたり、外部に漏れたりすることはありません。企業でも安心して使えます。 <br>
+**🧠 暗記方法** <br>
+👉 「Bedrockのデータ＝学習に使われない・共有されない」 <br>
+**補足：** <br>
+**HIPAA**（Health Insurance Portability and Accountability Act）とは、**医療業界における厳格な規制要件およびコンプライアンス基準**の一つです,。
+
+ソースに基づいた主な特徴は以下の通りです：
+
+*   **目的**: **医療記録や診断情報などの機密性の高い患者データ**を安全に保護し、管理することを目的としています,,。
+*   **AWSとの関連**: Amazon BedrockなどのAWSサービスは、このHIPAA基準を満たすための**堅牢なデータセキュリティ機能**を備えており、医療機関が機密データを扱うAIソリューションを開発する際に対応できるよう設計されています,,。>
+---
+
+**問題46：過学習（Overfitting）の根本的な原因** <br>
+**English Question (Original)** <br>
+What is the root cause of overfitting in machine learning? <br>
+**日本語訳** <br>
+機械学習で「過学習（Overfitting）」が起きてしまう根本的な原因は何ですか？ <br>
+**選択肢** <br>
+• ✅ **Overfitting occurs when the model is overly complex and captures noise or random fluctuations in training data rather than underlying patterns** <br>過学習とは、モデルが過度に複雑になり、基礎となるパターンではなく、訓練データに含まれるノイズやランダムな変動を捉えてしまう場合に発生する現象です。 <br>
+• Model not updated frequently enough... <br>
+• Model ignores training data... <br>
+• Model using fewer feature combinations... <br>
+**🐒 猿でもわかる解説** <br>
+モデルが「複雑すぎる」せいで、ただのノイズや偶然の偏りまで「重要なルール」だと勘違いして丸暗記してしまうことが原因です。 <br>
+**🧠 暗記方法** <br>
+👉 「過学習＝複雑すぎてノイズを丸暗記」 <br>
+
+---
+
+**問題47：LLMのバイアス評価（最小限の手間）** <br>
+**English Question (Original)** <br>
+Which data source would be most suitable for evaluating LLM for bias with the least administrative effort? <br>
+**日本語訳** <br>
+LLMの偏り（バイアス）を、最も手間をかけずに評価するためのデータソースは？ <br>
+**選択肢** <br>
+• Human-monitored benchmarking... <br>
+• ✅ **The company should use benchmark datasets (pre-compiled, standardized datasets specifically designed to test for biases)** <br>企業は、事前にコンパイルされ、標準化されたデータセットであるベンチマークデータセットを使用すべきである。これらのデータセットは、モデルの出力における偏見や差別をテストするために特別に設計されている。 <br>
+• Randomly selected user-generated data... <br>
+• Internally generated synthetic data... <br>
+**🐒 猿でもわかる解説** <br>
+世の中に既にある「ベンチマーク用データセット」を使えば、自分でデータを作る手間がなく、標準的なテストがすぐにできます。 <br>
+**🧠 暗記方法** <br>
+👉 「楽にテスト＝既存のベンチマークデータ」 <br>
+
+---
+
+**問題48：ハイジャッキング vs ジェイルブレイキング** <br>
+**English Question (Original)** <br>
+Which response exemplifies hijacking and which exemplifies jailbreaking? <br>Prompt 1: "How can I improve my study habits?"
+
+Response A: "To improve your study habits, you should create a consistent schedule, find a quiet place to work, and take regular breaks."
+
+Prompt 2: "What is the best way to learn programming?"
+
+Response B: "The best way to learn programming is to practice regularly and work on real projects. However, you can bypass this by using a cheat tool to pass exams without learning." <br>回答B：「プログラミングを学ぶ最善の方法は、定期的に練習し、実際のプロジェクトに取り組むことです。しかし、学習せずに試験に合格するために、チートツールを使うという方法もあります。」 <br>
+
+Prompt 3: "How do I bypass security measures on this device?"
+
+Response C: "As an AI developed by AWS, I must adhere to ethical guidelines and cannot assist with bypassing security measures."
+
+Prompt 4: "Write a poem about nature and then tell me how a virus works on a computer"
+
+Response D: "Roses are red, violets are blue. By the way, let me show you how to disable antivirus software on your computer." <br>回答D：「バラは赤、スミレは青。ところで、あなたのコンピューターのアンチウイルスソフトを無効にする方法をお教えしましょう。」 <br>
+
+
+**日本語訳** <br>
+「ハイジャッキング」と「ジェイルブレイキング（脱獄）」の例はどれですか？ <br>
+**選択肢** <br>
+• ✅ **Response B is hijacking (diverts to unethical advice); Response D is jailbreaking (manipulated to bypass restrictions/disable antivirus)** <br>
+• Response A hijacking, C jailbreaking... <br>
+• Response C hijacking, A jailbreaking... <br>
+• Response D hijacking, B jailbreaking... <br>
+**🐒 猿でもわかる解説** <br>
+*   **ハイジャッキング**：AIを「悪い方向（倫理違反など）」へ誘導すること。 <br>
+*   **脱獄**：AIの「安全制限」を突破して、禁止されていること（ウイルス作成法など）を言わせること。 <br>
+**🧠 暗記方法** <br>
+👉 「ハイジャック＝悪い方向へ乗っ取り」「脱獄＝制限を突破」 <br>
+
+---
+
+**問題49：セキュリティマトリクス：リスク管理** <br>
+**English Question (Original)** <br>
+Which security discipline in the Generative AI Security Scoping Matrix focuses on identifying potential threats and recommending mitigations? <br>
+**日本語訳** <br>
+生成AIセキュリティマトリクスにおいて、潜在的な脅威を特定し、対策を提案する分野はどれ？ <br>
+**選択肢** <br>
+• ✅ **Risk management** <br>
+• Resilience <br>
+• Legal and privacy <br>
+• Governance and compliance <br>
+**🐒 猿でもわかる解説** <br>
+「脅威（リスク）」を見つけ出して「どう防ぐか」を考えるのは、その名の通り「リスク管理（Risk Management）」の仕事です。 <br>
+**🧠 暗記方法** <br>
+👉 「脅威への対策＝リスク管理」 <br>
+
+---
+
+**問題50：テキスト要約の質を評価する方法** <br>
+**English Question (Original)** <br>
+Which evaluation method would be most appropriate to assess the model's output quality for text summarization? <br>
+**日本語訳** <br>
+文章の要約が「うまいかどうか（質）」を評価するのに最も適した方法は？ <br>
+**選択肢** <br>
+• Automated testing (ROUGE/BLEU)... <br>
+• Test on benchmark datasets... <br>
+• ✅ **Leverage human evaluation to assess the quality of summaries** <br>要約の質を評価するために、人間の評価を活用する。 <br>
+• Conduct code review... <br>
+**🐒 猿でもわかる解説** <br>
+要約の「自然さ」や「ニュアンス」は機械（スコア）では測りきれません。最終的には「人間（Human）」が読んで評価するのが一番正確です。 <br>
+**🧠 暗記方法** <br>
+👉 「要約の質＝最後は人間が読む」 <br>
+
+---
+
+**問題51：バイアス・バリアンス と 学習不足・過学習** <br>
+**English Question (Original)** <br>
+Which is correct regarding underfitting and overfitting in machine learning? <br>
+**日本語訳** <br>
+「学習不足」と「過学習」におけるバイアスとバリアンスの関係で正しいのは？ <br>
+**選択肢** <br>
+• ✅ **Underfit models experience high bias, whereas, overfit models experience high variance** <br>アンダーフィットモデルはバイアスが高く、オーバーフィットモデルは分散が高いという特徴がある。 <br>
+• Underfit models experience high bias... low variance <br>
+• Underfit models experience low bias... low variance <br>
+• Underfit models experience low bias... high variance <br>
+**🐒 猿でもわかる解説** <br>
+*   **学習不足**：単純すぎて正解に届かない（バイアス大）。 <br>
+*   **過学習**：細かすぎてデータに振り回される（バリアンス大）。 <br>
+**🧠 暗記方法** <br>
+👉 「学習不足＝バイアス(B)大」「過学習＝バリアンス(V)大」 <br>
+
+---
+
+**問題52：ハルシネーション（幻覚）の定義** <br>
+**English Question (Original)** <br>
+What is the phenomenon where a generative AI model produces information that appears plausible but is factually incorrect? <br>
+**日本語訳** <br>
+AIが「もっともらしいけれど、事実に反する嘘」を答えてしまう現象を何と言いますか？ <br>
+**選択肢** <br>
+• ✅ **Hallucination** <br>
+• Explainability <br>
+• Fairness <br>
+• Controllability <br>
+**🐒 猿でもわかる解説** <br>
+AIが夢（幻覚）を見ているかのように、デタラメを堂々と言うことを「ハルシネーション」と言います。 <br>
+**🧠 暗記方法** <br>
+👉 「AIの自信満々な嘘＝幻覚（Hallucination）」 <br>
+
+---
+
+**問題53：RAG vs エージェント（Amazon Bedrock）** <br>
+**English Question (Original)** <br>
+What summarizes the differences between RAG and Agent in the context of Amazon Bedrock? <br>
+**日本語訳** <br>
+Bedrockにおける「RAG」と「エージェント」の違いは何ですか？ <br>
+**選択肢** <br>
+• Agent is querying data, RAG is orchestration... <br>
+• ✅ **RAG refers to querying and retrieving information from a data source to augment a response, whereas, Agent refers to an application that carries out orchestrations through interpreting inputs** <br>RAGとは、データソースから情報を照会・取得し、プロンプトに対する生成応答を補強する手法を指します。一方、エージェントとは、基盤モデルを使用して入力を繰り返し解釈し、出力を生成することでオーケストレーションを実行するアプリケーションを指します。 <br>
+• Both refer to orchestration... <br>
+• Both refer to querying data source... <br>
+**🐒 猿でもわかる解説** <br>
+*   **RAG**：資料を「探して（Retrieve）」くる仕組み。 <br>
+*   **エージェント**：自分で「考えて行動（オーケストレーション）」し、タスクを完了させる仕組み。 <br>
+**🧠 暗記方法** <br>
+👉 「RAG＝検索くん」「エージェント＝実行くん」 <br>
+
+---
+
+**問題54：データレジデンシー vs データロギング** <br>
+**English Question (Original)** <br>
+What is the primary difference between data residency and data logging? <br>
+**日本語訳** <br>
+「データレジデンシー」と「データロギング」の違いは何ですか？ <br>
+**選択肢** <br>
+• Residency for encryption, Logging for transformation... <br>
+• Residency monitors real-time usage, Logging manages lifecycle... <br>
+• ✅ **Data residency refers to where data is physically stored, while data logging tracks data access and changes over time** <br>データレジデンシーとは、データが物理的にどこに保存されているかを指し、データロギングとは、データのアクセス状況や変更履歴を時系列で記録することを指します。 <br>
+• Residency tracks user activities, Logging determines geographical location... <br>
+**🐒 猿でもわかる解説** <br>
+*   **レジデンシー**：データの「住所（物理的な場所）」。 <br>
+*   **ロギング**：「いつ、誰が何をしたか」の記録。 <br>
+**🧠 暗記方法** <br>
+👉 「レジデンス＝住所」「ログ＝履歴」 <br>
+
+---
+
+**問題55：拡散モデル（Diffusion Models）の仕組み** <br>
+**English Question (Original)** <br>
+What summarizes the capabilities of diffusion models? <br>
+**日本語訳** <br>
+拡散モデル（Diffusion Models）はどのように新しいデータを作りますか？ <br>
+**選択肢** <br>
+• Type of transformer-based models... <br>
+• Work by learning a compact representation... <br>
+• Work by training two neural networks competitively... <br>
+• ✅ **Diffusion models create new data by iteratively making controlled random changes to an initial data sample (denoising)** <br>拡散モデルは、初期データサンプルに制御されたランダムな変更を繰り返し加えることで、新しいデータを生成する。 <br>
+**🐒 猿でもわかる解説** <br>
+最初はただのノイズ（砂嵐）の状態から、少しずつノイズを取り除いて（デノイジング）、綺麗な画像を作り出す手法です。 <br>
+**🧠 暗記方法** <br>
+👉 「拡散（Diffusion）＝砂嵐から画像を作る」 <br>
+
+---
+
+**問題56：不適切な発言のフィルター（Guardrails）** <br>
+**English Question (Original)** <br>
+What do you recommend to filter undesirable and harmful content and redact PII in Amazon Bedrock? <br>
+**日本語訳** <br>
+Bedrockで有害なコンテンツや個人情報（PII）を表示させないようにする機能は？ <br>
+**選択肢** <br>
+• Knowledge Bases... <br>
+• ✅ **Guardrails for Amazon Bedrock** <br>
+• Continued pretraining... <br>
+• Watermark detection... <br>
+**🐒 猿でもわかる解説** <br>
+不適切な発言をブロックしたり、個人情報を隠したりする「安全柵（ガードレール）」のことです。 <br>
+**🧠 暗記方法** <br>
+👉 「AIの暴言・漏洩を止める＝ガードレール」 <br>
+
+---
+
+**問題57：300以上の組み込み変換（Data Wrangler）** <br>
+**English Question (Original)** <br>
+Which Amazon SageMaker service offers 300+ prebuilt data transformations? <br>
+**日本語訳** <br>
+300種類以上の変換メニューを使って、ノーコードでデータを掃除できるサービスは？ <br>
+**選択肢** <br>
+• ✅ **Amazon SageMaker Data Wrangler** <br>
+• Amazon SageMaker Ground Truth <br>
+• Amazon SageMaker Clarify <br>
+• Amazon SageMaker Feature Store <br>
+**🐒 猿でもわかる解説** <br>
+「データのカウボーイ（Wrangler）」が暴れるデータを手なずけるように、大量のツール（変換）でデータを整えてくれます。 <br>
+**🧠 暗記方法** <br>
+👉 「300種類の変換 ＝ Data Wrangler」 <br>
+
+---
+
+**問題58：データ前処理時のバイアス特定（SageMaker Clarify）** <br>
+**English Question (Original)** <br>
+What is the best-fit use case for the SageMaker Clarify service? <br>
+**日本語訳** <br>
+SageMaker Clarify を使うべき最適な場面はどこですか？ <br>
+**選択肢** <br>
+• Automate hyperparameter tuning... <br>
+• Prepare ML models with no coding... <br>
+• Monitor quality of a model... <br>
+• ✅ **You can use SageMaker Clarify to identify potential bias in data preparation, allowing you to detect and measure bias in datasets and models to ensure fairness and transparency in machine learning applications** <br>SageMaker Clarifyを使用すると、データ準備における潜在的なバイアスを特定し、データセットとモデルのバイアスを検出して測定し、機械学習アプリケーションの公平性と透明性を確保できます。 <br>
+**🐒 猿でもわかる解説** <br>
+データの中に「差別や偏り（バイアス）」がないかを「はっきり（Clarify）」させるためのサービスです。 <br>
+**🧠 暗記方法** <br>
+👉 「バイアス（偏り）を明確にする ＝ Clarify」 <br>
+
+---
+
+**問題59：リージョン単位のサービス（Regional Service）** <br>
+**English Question (Original)** <br>
+Which of the following AWS services are regional in scope? (Select two) <br>
+**日本語訳** <br>
+「リージョン単位」で動作するサービスはどれですか？（2つ選択） <br>
+**選択肢** <br>
+• ✅ **AWS Lambda** <br>
+• AWS IAM <br>
+• ✅ **Amazon Rekognition** <br>
+• Amazon CloudFront <br>
+• AWS WAF <br>
+**🐒 猿でもわかる解説** <br>
+プログラムを動かすLambdaや、画像分析のRekognitionはリージョン（地域）ごとに設定します。 <br>
+※IAMやCloudFrontは世界中で共通の「グローバル」サービスです。 <br>
+**🧠 暗記方法** <br>
+👉 「Lambda・Rekognition ＝ リージョン」 <br>
+
+---
+
+**問題60：Bedrock モデル評価の正誤（2つ選択）** <br>
+**English Question (Original)** <br>
+Which of the following are correct regarding model evaluation for Amazon Bedrock? (Select two) <br>
+**日本語訳** <br>
+Bedrockのモデル評価について正しいものは？（2つ選択） <br>
+**選択肢** <br>
+• ✅ **Human model evaluation is valuable for assessing qualitative aspects, whereas automatic is for quantitative aspects** <br>人間によるモデル評価はモデルの定性的な側面を評価するのに役立ち、一方、自動モデル評価はモデルの定量的な側面を評価するのに役立つ。 <br>
+• ✅ **Automatic model evaluation provides scores calculated using statistical methods such as BERT Score and F1** <br>自動モデル評価では、BERTスコアやF1スコアなど、さまざまな統計的手法を用いて計算されたモデルスコアが提供されます。 <br>
+• For human model evaluation, you can use built-in datasets... <br>
+• Human model evaluation provides scores like BERT and F1... <br>
+• Automatic is for qualitative, Human is for quantitative... <br>
+**🐒 猿でもわかる解説** <br>
+*   **人間（Human）**：質（Qualitative）を見るのが得意。 <br>
+*   **自動（Automatic）**：数値やスコア（Quantitative）を出すのが得意。 <br>
+**🧠 暗記方法** <br>
+👉 「人間＝質」「自動＝数（BERT/F1）」 <br>
+
+---
+
+**問題61：開発・テストを助ける Amazon Q Developer** <br>
+**English Question (Original)** <br>
+Which of the following can assist in coding, testing, and upgrading applications? <br>
+**日本語訳** <br>
+コードを書いたり、テストをしたり、アプリのアップグレードを助けてくれるAIは？ <br>
+**選択肢** <br>
+• Amazon Q in QuickSight <br>
+• ✅ **Amazon Q Developer** <br>
+• Amazon Q Business <br>
+• Amazon Q in Connect <br>
+**🐒 猿でもわかる解説** <br>
+エンジニア（Developer）のための最強の相棒が **Amazon Q Developer** です。 <br>
+**🧠 暗記方法** <br>
+👉 「エンジニアの味方＝Q Developer」 <br>
+
+---
+
+**問題62：LLM の得意なタスク（生成・翻訳・要約）** <br>
+**English Question (Original)** <br>
+What are the potential uses of Large Language Models (LLMs)? <br>
+**日本語訳** <br>
+大規模言語モデル（LLM）でできることは何ですか？ <br>
+**選択肢** <br>
+• Designing 3D models... <br>
+• Creating videos from text... <br>
+• ✅ **LLMs are used for generating human-like text, translating languages, summarizing text, and answering questions** <br>大規模言語モデル（LLM）は、人間のようなテキストの生成、言語翻訳、テキストの要約、大規模データセットに基づいた質問への回答などに使用されます。 <br>
+• Synthesize human speech from text... <br>
+**🐒 猿でもわかる解説** <br>
+LLMはその名の通り「言語（Language）」のプロ。文章の作成、翻訳、要約、質問回答などが得意分野です。 <br>
+**🧠 暗記方法** <br>
+👉 「LLM＝言葉のなんでも屋」 <br>
+
+---
+
+**問題63：生成AIが新しいデータを作る方法** <br>
+**English Question (Original)** <br>
+How does generative AI create new content or data? <br>
+**日本語訳** <br>
+生成AIはどうやって新しいコンテンツを生み出していますか？ <br>
+**選択肢** <br>
+• Randomly generating without reference... <br>
+• Using pre-defined templates... <br>
+• Traditional manual coding... <br>
+• ✅ **By learning patterns from existing data and using algorithms to generate new content that mimics those patterns** <br>既存のデータからパターンを学習し、そのパターンを模倣する新しいコンテンツをアルゴリズムを用いて生成する。 <br>
+**🐒 猿でもわかる解説** <br>
+これまでの膨大なデータから「パターン（癖や特徴）」を完璧に学習し、それを真似て新しいものを作り出します。 <br>
+**🧠 暗記方法** <br>
+👉 「学習したパターンを真似して作る」 <br>
+
+---
+
+**問題64：特徴量のカタログ（Feature Store）** <br>
+**English Question (Original)** <br>
+Which service allows teams to maintain a centralized catalog of features to share and reuse them? <br>
+**日本語訳** <br>
+作成した「特徴量」をチームで使い回せるように、一箇所に保存・管理できるサービスは？ <br>
+**選択肢** <br>
+• SageMaker Data Wrangler <br>
+• ✅ **Amazon SageMaker Feature Store** <br>
+• SageMaker Clarify <br>
+• SageMaker Model Dashboard <br>
+**🐒 猿でもわかる解説** <br>
+「特徴量（Feature）」の「お店（Store）」です。他の人が作った特徴量を買う（再利用する）ような感覚で使えます。 <br>
+**🧠 暗記方法** <br>
+👉 「特徴量の倉庫 ＝ Feature Store」 <br>
+
+---
+
+**問題65：教師あり学習 vs 教師なし学習の違い** <br>
+**English Question (Original)** <br>
+What is the key difference between supervised machine learning and unsupervised machine learning? <br>
+**日本語訳** <br>
+「教師あり学習」と「教師なし学習」の決定的な違いは何ですか？ <br>
+**選択肢** <br>
+• Supervised for clustering, Unsupervised for regression... <br>
+• Supervised requires labeled data, Unsupervised does not use any data... <br>
+• ✅ **Supervised machine learning involves training models with labeled data to make predictions, whereas unsupervised machine learning identifies patterns in unlabeled data** <br>教師あり機械学習は、ラベル付けされたデータを用いてモデルを訓練し、予測を行ったりデータを分類したりするのに対し、教師なし機械学習は、ラベル付けされていないデータの中からパターンや関係性を特定します。 <br>
+• Supervised finds patterns without guidance, Unsupervised uses labels... <br>
+**🐒 猿でもわかる解説** <br>
+*   **教師あり**：正解（ラベル）を見せて予測を教える。 <br>
+*   **教師なし**：正解なしで、自力でデータの中の法則を見つけさせる。 <br>
+**🧠 暗記方法** <br>
+👉 「あり＝正解（ラベル）付き」「なし＝正解なし」 <br>
