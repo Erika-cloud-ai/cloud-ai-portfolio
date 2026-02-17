@@ -1,6 +1,6 @@
 | １st Time    | 2nd time    |  3rd Time   | 4th Time |
 |:---------------|:-----------|:----------|:----------|
-| 40% | %    | % | %   |
+| 40% | 69%    | 83% | %   |
 <br>
 ---
 
@@ -854,7 +854,7 @@ Which ML-powered service is the right fit to extract health information from uns
 
 **問題51：不適切な回答を防ぐプロンプト指示** <br>
 **English Question (Original)** <br>
-What would be the most effective approach to control risks of generating inappropriate content? <br>
+What would be the most effective approach to control risks of generating inappropriate content? <br>キーワード：inappropriate, sensitive, or malicious content<br>
 **日本語訳** <br>
 AIに不適切な内容を喋らせないための、最も（直接的で）効果的なアプローチは？ <br>
 **選択肢** <br>
@@ -991,7 +991,7 @@ What is the difference between multi-class and multi-label classification? <br>
 **日本語訳** <br>
 「マルチクラス分類」と「マルチラベル分類」の違いは何ですか？ <br>
 **選択肢** <br>
-• ✅ **Multi-class assigns to one of several possible classes, while multi-label assigns to one or more classes** <br>マルチクラス分類では各インスタンスを複数のクラスのいずれかに割り当てますが、マルチラベル分類では各インスタンスを1つ以上のクラスに割り当てます。 <br>
+• ✅ **Multi-class classification assigns each instance to one of several possible classes, while multi-label classification assigns each instance to one or more classes** <br>マルチクラス分類では各インスタンスを複数のクラスのいずれかに割り当てますが、マルチラベル分類では各インスタンスを1つ以上のクラスに割り当てます。 <br>
 **🐒 猿でもわかる解説** <br>
 *   **マルチクラス**：「犬・猫・鳥のどれか1つ」に分ける。 <br>
 *   **マルチラベル**：「この本は『科学』かつ『歴史』」のように複数のタグを付ける。 <br>
